@@ -20,13 +20,8 @@ export function FunnelChart({ stages }: { stages: FunnelStage[] }) {
         return (
           <div
             key={s.stage}
-            tabIndex={0}
-            role="img"
-            aria-label={`${s.stage}: ${s.count.toLocaleString("en-US")} people, ${Math.round(s.shareOfApplicants * 100)}% of applicants`}
             onMouseEnter={() => setActive(i)}
             onMouseLeave={() => setActive(null)}
-            onFocus={() => setActive(i)}
-            onBlur={() => setActive(null)}
             className="grid grid-cols-[7.5rem_1fr_auto] items-center gap-3"
           >
             <span className="text-sm font-medium">{s.stage}</span>

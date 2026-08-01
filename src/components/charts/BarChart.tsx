@@ -117,22 +117,19 @@ export function BarChart({
                   fill={color}
                   opacity={active === null || isActive ? 1 : 0.45}
                 />
-                {/* Oversized invisible hit target; focusable for keyboard */}
+                {/* Oversized hover target. Deliberately not focusable: the
+                    chart sits inside an aria-hidden figure whose accessible
+                    equivalent is the table, and a focusable control inside
+                    aria-hidden content is a trap for keyboard users. */}
                 <rect
                   x={(x(d.label) ?? 0) - (x.step() - x.bandwidth()) / 2}
                   y={0}
                   width={x.step()}
                   height={innerH}
                   fill="transparent"
-                  tabIndex={0}
-                  role="img"
-                  aria-label={`${d.label}: ${formatValue(d.value)}`}
-                  aria-describedby={isActive ? `${id}-tip` : undefined}
+                  aria-hidden="true"
                   onMouseEnter={() => setActive(i)}
                   onMouseLeave={() => setActive(null)}
-                  onFocus={() => setActive(i)}
-                  onBlur={() => setActive(null)}
-                  style={{ outline: "none" }}
                 />
                 <text
                   x={bx + band / 2}
