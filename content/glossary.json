@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "tmdsas",
+    "term": "TMDSAS",
+    "short": "The Texas Medical and Dental Schools Application Service — the single application system used by nearly all Texas medical schools, plus the state's dental and veterinary schools. Texas's version of AMCAS.",
+    "aka": []
+  },
+  {
+    "slug": "amcas",
+    "term": "AMCAS",
+    "short": "The American Medical College Application Service — the application system used by most MD schools outside Texas.",
+    "aka": []
+  },
+  {
+    "slug": "aacomas",
+    "term": "AACOMAS",
+    "short": "The application service used by most DO (osteopathic) schools outside Texas.",
+    "aka": []
+  },
+  {
+    "slug": "mcat",
+    "term": "MCAT",
+    "short": "The Medical College Admission Test — a standardized exam required by medical schools, scored from 472 to 528.",
+    "aka": []
+  },
+  {
+    "slug": "gpa",
+    "term": "GPA",
+    "short": "Grade point average. Medical schools look at both your overall GPA and your science GPA (sometimes called BCPM: biology, chemistry, physics, math).",
+    "aka": ["BCPM"]
+  },
+  {
+    "slug": "jamp",
+    "term": "JAMP",
+    "short": "The Joint Admission Medical Program — a Texas program offering a supported path to guaranteed admission at a participating Texas medical school for economically disadvantaged students. You must apply during your freshman or sophomore year of college.",
+    "aka": []
+  },
+  {
+    "slug": "domicile",
+    "term": "Domicile",
+    "short": "Your true, fixed, permanent home — the place you intend to stay, shown through things like a job, property, or family ties. Living somewhere for school alone does not establish domicile.",
+    "aka": []
+  },
+  {
+    "slug": "matriculate",
+    "term": "Matriculate",
+    "short": "To actually enroll and start at a school after being accepted. Matriculant counts are smaller than acceptance counts because some accepted students go elsewhere.",
+    "aka": ["matriculant", "matriculants", "matriculated"]
+  },
+  {
+    "slug": "prerequisites",
+    "term": "Prerequisites",
+    "short": "The specific college courses a medical school requires you to complete before enrolling — typically biology, chemistry, and related coursework. Each school sets its own list.",
+    "aka": ["prerequisite"]
+  },
+  {
+    "slug": "md",
+    "term": "MD",
+    "short": "Doctor of Medicine — the degree granted by allopathic medical schools. MDs and DOs both become fully licensed physicians.",
+    "aka": []
+  },
+  {
+    "slug": "do",
+    "term": "DO",
+    "short": "Doctor of Osteopathic Medicine — the degree granted by osteopathic medical schools. DOs and MDs both become fully licensed physicians; DO training adds osteopathic manipulative medicine.",
+    "aka": []
+  },
+  {
+    "slug": "gap-year",
+    "term": "Gap year",
+    "short": "One or more years between finishing college and starting medical school. Common and not a red flag — many matriculants take at least one.",
+    "aka": ["gap years"]
+  },
+  {
+    "slug": "entry-year",
+    "term": "Entry year",
+    "short": "The year a student would start medical school. TMDSAS labels each application cycle by entry year — you apply during the year before your entry year.",
+    "aka": ["EY"]
+  }
+]
