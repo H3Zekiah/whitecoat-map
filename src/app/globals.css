@@ -31,6 +31,14 @@
   --chart-1: #048264;
   --chart-2: #c1531f;
   --chart-3: #7a4fb3;
+
+  /* sequential ramp for the acceptance grid — validated ordinal, 2026-08-01 */
+  --seq-1: #6fbcac;
+  --seq-2: #4da291;
+  --seq-3: #2f8878;
+  --seq-4: #1a6c5c;
+  --seq-5: #0a4f43;
+  --seq-6: #032c25;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,6 +62,13 @@
     --chart-1: #35a08c;
     --chart-2: #cf7a3c;
     --chart-3: #9d7fd6;
+
+    --seq-1: #255a50;
+    --seq-2: #2f7568;
+    --seq-3: #3d9082;
+    --seq-4: #54ac9b;
+    --seq-5: #74c7b6;
+    --seq-6: #9fdfd0;
   }
 }
 
@@ -77,6 +92,13 @@
   --chart-1: #35a08c;
   --chart-2: #cf7a3c;
   --chart-3: #9d7fd6;
+
+  --seq-1: #255a50;
+  --seq-2: #2f7568;
+  --seq-3: #3d9082;
+  --seq-4: #54ac9b;
+  --seq-5: #74c7b6;
+  --seq-6: #9fdfd0;
 }
 
 @theme inline {
@@ -95,6 +117,12 @@
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
+  --color-seq-1: var(--seq-1);
+  --color-seq-2: var(--seq-2);
+  --color-seq-3: var(--seq-3);
+  --color-seq-4: var(--seq-4);
+  --color-seq-5: var(--seq-5);
+  --color-seq-6: var(--seq-6);
   --color-opinion-soft: var(--opinion-soft);
 
   --font-display: var(--font-fraunces);
