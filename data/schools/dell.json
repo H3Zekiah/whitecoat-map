@@ -1,0 +1,39 @@
+{
+  "slug": "dell",
+  "name": "Dell Medical School, The University of Texas at Austin",
+  "shortName": "Dell (Austin)",
+  "degree": "MD",
+  "applicationService": "TMDSAS",
+  "city": "Austin",
+  "website": "https://dellmed.utexas.edu/",
+  "classSize": {
+    "value": 50,
+    "sourceId": "dellmed-faq",
+    "retrieved": "2026-08-01"
+  },
+  "gpaAverage": {
+    "unavailable": true,
+    "reason": "school deliberately publishes no class GPA statistics (holistic-review policy)",
+    "checkedOn": "2026-08-01"
+  },
+  "gpaRange": {
+    "unavailable": true,
+    "reason": "school deliberately publishes no class GPA statistics (holistic-review policy)",
+    "checkedOn": "2026-08-01"
+  },
+  "mcatAverage": {
+    "unavailable": true,
+    "reason": "school deliberately publishes no class MCAT statistics (holistic-review policy)",
+    "checkedOn": "2026-08-01"
+  },
+  "mcatRange": {
+    "unavailable": true,
+    "reason": "school deliberately publishes no class MCAT statistics (holistic-review policy)",
+    "checkedOn": "2026-08-01"
+  },
+  "inStatePercent": {
+    "unavailable": true,
+    "reason": "Texas-resident share not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "ttuhsc-lubbock",
+  "name": "Texas Tech University Health Sciences Center School of Medicine",
+  "shortName": "Texas Tech (Lubbock)",
+  "degree": "MD",
+  "applicationService": "TMDSAS",
+  "city": "Lubbock",
+  "website": "https://www.ttuhsc.edu/medicine/",
+  "classSize": {
+    "unavailable": true,
+    "reason": "class size not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  },
+  "gpaAverage": {
+    "unavailable": true,
+    "reason": "class GPA statistics not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  },
+  "gpaRange": {
+    "unavailable": true,
+    "reason": "GPA range not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  },
+  "mcatAverage": {
+    "unavailable": true,
+    "reason": "class MCAT statistics not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  },
+  "mcatRange": {
+    "unavailable": true,
+    "reason": "MCAT range not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  },
+  "inStatePercent": {
+    "unavailable": true,
+    "reason": "Texas-resident share not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  }
+}

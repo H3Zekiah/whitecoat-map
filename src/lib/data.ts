@@ -137,9 +137,9 @@ export const schoolSchema = z.object({
   city: z.string().min(1),
   website: z.string().url(),
   classSize: provenancedNumber,
-  gpaMedian: provenancedNumber,
+  gpaAverage: provenancedNumber,
   gpaRange: provenancedRange,
-  mcatMedian: provenancedNumber,
+  mcatAverage: provenancedNumber,
   mcatRange: provenancedRange,
   inStatePercent: provenancedNumber,
 });

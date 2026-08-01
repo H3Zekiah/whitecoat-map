@@ -1,0 +1,39 @@
+{
+  "slug": "tcom",
+  "name": "Texas College of Osteopathic Medicine, UNT Health Fort Worth",
+  "shortName": "TCOM",
+  "degree": "DO",
+  "applicationService": "TMDSAS",
+  "city": "Fort Worth",
+  "website": "https://www.unthsc.edu/texas-college-of-osteopathic-medicine/",
+  "classSize": {
+    "unavailable": true,
+    "reason": "class size not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  },
+  "gpaAverage": {
+    "unavailable": true,
+    "reason": "no public class profile located; UNT Health pathways EY2024 infographic is a candidate source to check",
+    "checkedOn": "2026-08-01"
+  },
+  "gpaRange": {
+    "unavailable": true,
+    "reason": "GPA range not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  },
+  "mcatAverage": {
+    "unavailable": true,
+    "reason": "no public class profile located; UNT Health pathways EY2024 infographic is a candidate source to check",
+    "checkedOn": "2026-08-01"
+  },
+  "mcatRange": {
+    "unavailable": true,
+    "reason": "MCAT range not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  },
+  "inStatePercent": {
+    "unavailable": true,
+    "reason": "school states 90% of seats reserved for Texas residents; exact share not published",
+    "checkedOn": "2026-08-01"
+  }
+}

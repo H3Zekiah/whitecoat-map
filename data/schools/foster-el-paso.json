@@ -1,0 +1,39 @@
+{
+  "slug": "foster-el-paso",
+  "name": "Paul L. Foster School of Medicine, Texas Tech Health El Paso",
+  "shortName": "Foster (El Paso)",
+  "degree": "MD",
+  "applicationService": "TMDSAS",
+  "city": "El Paso",
+  "website": "https://ttuhscep.edu/som/",
+  "classSize": {
+    "unavailable": true,
+    "reason": "class size not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  },
+  "gpaAverage": {
+    "unavailable": true,
+    "reason": "school publishes applicant averages (GPA 3.7) on its FAQ, not matriculant statistics",
+    "checkedOn": "2026-08-01"
+  },
+  "gpaRange": {
+    "unavailable": true,
+    "reason": "GPA range not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  },
+  "mcatAverage": {
+    "unavailable": true,
+    "reason": "school publishes applicant averages (MCAT 508) on its FAQ, not matriculant statistics",
+    "checkedOn": "2026-08-01"
+  },
+  "mcatRange": {
+    "unavailable": true,
+    "reason": "MCAT range not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  },
+  "inStatePercent": {
+    "unavailable": true,
+    "reason": "Texas-resident share not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  }
+}
