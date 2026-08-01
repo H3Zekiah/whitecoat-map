@@ -73,7 +73,7 @@ Four modules. No accounts, no personalization, no saved state.
 
 Four headline visualizations, all Texas, all sourced:
 
-1. **Acceptance landscape grid** — GPA crossed against MCAT, colored by historical acceptance rate, split by Texas resident and non-resident. The most-wanted view in Texas premed and the one TMDSAS does not publish (it releases GPA and MCAT separately, never crossed).
+1. **Acceptance landscape grid** — GPA crossed against MCAT, colored by historical acceptance rate, split by Texas resident and non-resident. The most-wanted view in Texas premed. *(Corrected 2026-08-01 by the Phase 0 audit:)* TMDSAS does publish crossed GPA × MCAT data — in archived per-year PDF matrices and inside its Power BI dashboard's data model — but never as a readable, linkable grid. That readable view is what we build; see `docs/SOURCES.md`.
 2. **The Texas funnel** — how a cohort moves through the pipeline: Texans who apply, interview, are accepted, and matriculate, with dropoff at each stage. Reframes "am I good enough" into "here is what the process actually is."
 3. **Per-school profiles** — consistent small charts on each school page: GPA and MCAT ranges rather than bare medians, class size, in-state share, cost.
 4. **Trends over time** — application volume and competitiveness by entry year across the last decade. Context for students, ammunition for advisors.
