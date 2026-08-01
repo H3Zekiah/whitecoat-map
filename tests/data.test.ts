@@ -5,6 +5,7 @@ import {
   isDatasetVerified,
   isUnavailable,
   loadManifest,
+  loadSchools,
   schoolSchema,
   verifiedValue,
 } from "../src/lib/data.ts";
@@ -110,6 +111,19 @@ test("school schema rejects a bare number without provenance", () => {
     },
   };
   assert.equal(schoolSchema.safeParse(school).success, false);
+});
+
+test("school directory holds exactly the expected programs, no duplicates", () => {
+  const schools = loadSchools();
+  /* 12 MD + 2 DO TMDSAS programs, plus UIWSOM (AACOMAS) per Gate 1. */
+  assert.equal(schools.length, 15);
+  const slugs = schools.map((s) => s.slug);
+  assert.equal(new Set(slugs).size, slugs.length);
+  assert.equal(
+    schools.filter((s) => s.applicationService === "TMDSAS").length,
+    14,
+  );
+  assert.equal(schools.filter((s) => s.degree === "DO").length, 3);
 });
 
 test("funnel dataset schema accepts a well-formed dataset", () => {

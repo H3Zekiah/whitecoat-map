@@ -13,7 +13,9 @@
       "deaea768c11bb95cb14a8450314b71ef413f31aef4d2d5209468c59cd149005c",
       "363ee15a49958520665abe71a34c08106de9e3f37494e1e3042ffe84604af8d8"
     ],
-    "extractedBy": "scripts/extract-tmdsas.ts"
+    "extractedBy": "scripts/extract-tmdsas.ts",
+    "verifiedBy": "Claude (cross-checked vs 7hacker CC0 dataset and internal totals; owner Gate 3 review pending)",
+    "verifiedOn": "2026-08-01"
   },
   "rows": [
     {

@@ -91,6 +91,26 @@ Two risks named in `PLAN.md` are **retired**:
 
 ---
 
+## Verification status — provisional, 2026-08-01
+
+**Gate 3 (owner review) has NOT happened.** To unblock chart development, figures carry a provisional stamp that names its own limits in the `verifiedBy` string:
+
+- **School fields** — `"Claude (checked against archived snapshot; owner Gate 3 review pending)"`. Each stamped value was confirmed to appear, in context, inside the archived snapshot of the page it cites. Applied to 10 fields: UTSW (227 / 3.89 / 516), McGovern (240 / 3.84 / 512), UIWSOM (3.6 / 504), UTMB class size (~230), Dell class size (50).
+- **Aggregate datasets** — `"Claude (cross-checked vs 7hacker CC0 dataset and internal totals; owner Gate 3 review pending)"`. Totals agree across three independent queries, residency splits sum to funnel totals, and overlapping years match the independent CC0 dataset exactly.
+
+**This check found four claims that did not survive it.** Values that appeared in search results but were _absent from the archived primary page_ were downgraded to `unavailable` rather than published:
+
+| School   | Claim               | Outcome                                                                                                  |
+| -------- | ------------------- | -------------------------------------------------------------------------------------------------------- |
+| UTMB     | GPA 3.80 / MCAT 511 | Not in the archived FAQ — **removed** (class size ~230 is on the page and stands)                        |
+| Fertitta | GPA 3.6 / MCAT 503  | Not in the archived FAQ — **removed**                                                                    |
+| UT Tyler | Class size 40       | Third-party sources only — **removed**                                                                   |
+| McGovern | 240 / 3.84 / 512    | Present on the _blog_ Class-of-2029 page, not the class-snapshot page — **source corrected**, value kept |
+
+This is the sourcing standard working as designed: a figure that cannot be traced into an archived primary document does not publish. When the owner runs Gate 3, these stamps should be replaced with his own name and date.
+
+---
+
 ## Gate 1 — PASSED 2026-08-01
 
 All four visualizations confirmed GO. Decisions:

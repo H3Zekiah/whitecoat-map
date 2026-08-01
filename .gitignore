@@ -42,3 +42,12 @@ next-env.d.ts
 
 # env example opt-in
 !.env.example
+
+# Sync conflict copies (this repo lives in an iCloud-synced folder).
+# These are never legitimate files; the school loader also rejects them.
+* [0-9].json
+* [0-9].ts
+* [0-9].tsx
+* [0-9].mdx
+* [0-9].html
+* [0-9]

@@ -9,12 +9,16 @@
   "classSize": {
     "value": 227,
     "sourceId": "utsw-class-profile",
-    "retrieved": "2026-08-01"
+    "retrieved": "2026-08-01",
+    "verifiedBy": "Claude (checked against archived snapshot; owner Gate 3 review pending)",
+    "verifiedOn": "2026-08-01"
   },
   "gpaAverage": {
     "value": 3.89,
     "sourceId": "utsw-class-profile",
-    "retrieved": "2026-08-01"
+    "retrieved": "2026-08-01",
+    "verifiedBy": "Claude (checked against archived snapshot; owner Gate 3 review pending)",
+    "verifiedOn": "2026-08-01"
   },
   "gpaRange": {
     "unavailable": true,
@@ -24,7 +28,9 @@
   "mcatAverage": {
     "value": 516,
     "sourceId": "utsw-class-profile",
-    "retrieved": "2026-08-01"
+    "retrieved": "2026-08-01",
+    "verifiedBy": "Claude (checked against archived snapshot; owner Gate 3 review pending)",
+    "verifiedOn": "2026-08-01"
   },
   "mcatRange": {
     "unavailable": true,

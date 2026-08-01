@@ -9,12 +9,14 @@
   "classSize": {
     "value": 230,
     "sourceId": "utmb-admissions-faq",
-    "retrieved": "2026-08-01"
+    "retrieved": "2026-08-01",
+    "verifiedBy": "Claude (checked against archived snapshot; owner Gate 3 review pending)",
+    "verifiedOn": "2026-08-01"
   },
   "gpaAverage": {
-    "value": 3.8,
-    "sourceId": "utmb-admissions-faq",
-    "retrieved": "2026-08-01"
+    "unavailable": true,
+    "reason": "figures reported by third parties are not present in the archived snapshot of the cited page; not citable (checked 2026-08-01)",
+    "checkedOn": "2026-08-01"
   },
   "gpaRange": {
     "unavailable": true,
@@ -22,9 +24,9 @@
     "checkedOn": "2026-08-01"
   },
   "mcatAverage": {
-    "value": 511,
-    "sourceId": "utmb-admissions-faq",
-    "retrieved": "2026-08-01"
+    "unavailable": true,
+    "reason": "figures reported by third parties are not present in the archived snapshot of the cited page; not citable (checked 2026-08-01)",
+    "checkedOn": "2026-08-01"
   },
   "mcatRange": {
     "unavailable": true,
