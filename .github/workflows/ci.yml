@@ -21,4 +21,5 @@ jobs:
       - run: npm run check:contrast
       - run: npm test
       - run: npm run validate:content
+      - run: npm run validate:data
       - run: npm run build

@@ -1,0 +1,74 @@
+[
+  {
+    "sourceId": "tmdsas-matrix-ey20",
+    "url": "https://www.tmdsas.com/docs/stats/MCAT-GPA-Matrix-EY20.pdf",
+    "retrievedAt": "2026-08-01T16:23:20.942Z",
+    "sha256": "fccd8d0ec48edf63e71ae092172b21a2ffb6b960b07dcee94b9bf7b93b1e8014",
+    "bytes": 132470,
+    "file": "data/snapshots/tmdsas-matrix-ey20/2026-08-01-fccd8d0e.pdf",
+    "contentType": "application/pdf"
+  },
+  {
+    "sourceId": "tmdsas-final-ey20",
+    "url": "https://www.tmdsas.com/docs/stats/Final-Statistics-Report-Medical-EY20.pdf",
+    "retrievedAt": "2026-08-01T16:23:21.373Z",
+    "sha256": "5ce89ec0b28be86c267b3f6712e31b5ef4348cb8b1285e93059025cfbb4b7720",
+    "bytes": 180573,
+    "file": "data/snapshots/tmdsas-final-ey20/2026-08-01-5ce89ec0.pdf",
+    "contentType": "application/pdf"
+  },
+  {
+    "sourceId": "tmdsas-matrix-ey19",
+    "url": "https://www.txhes.com/_resources/docs/stats/ey19/MCAT-GPA-Matrix-EY19.pdf",
+    "retrievedAt": "2026-08-01T16:23:22.668Z",
+    "sha256": "c073a27a3d77be8204faef288775916a95fc4a482e9d97fc50456dab41ee201e",
+    "bytes": 94313,
+    "file": "data/snapshots/tmdsas-matrix-ey19/2026-08-01-c073a27a.pdf",
+    "contentType": "application/pdf"
+  },
+  {
+    "sourceId": "tmdsas-roster",
+    "url": "https://www.tmdsas.com/about/TMDSAS_schools.html",
+    "retrievedAt": "2026-08-01T16:23:22.924Z",
+    "sha256": "a51ac4c40c1fa68d9d1798a0cdf9f67288ab49b13cd8fc71642ca0fe4e0415e5",
+    "bytes": 93732,
+    "file": "data/snapshots/tmdsas-roster/2026-08-01-a51ac4c4.html",
+    "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "tmdsas-residency",
+    "url": "https://www.tmdsas.com/explore/residency.html",
+    "retrievedAt": "2026-08-01T16:23:23.007Z",
+    "sha256": "3b96d1d0cad8d0931cf64cccbc806cf7ac74d050b7340c039e62f50c8be6d88e",
+    "bytes": 28064,
+    "file": "data/snapshots/tmdsas-residency/2026-08-01-3b96d1d0.html",
+    "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "tmdsas-guide-residency",
+    "url": "https://www.tmdsas.com/application-guide/residency.html",
+    "retrievedAt": "2026-08-01T16:23:23.110Z",
+    "sha256": "619ed284d054e8be6e5da18ad07e1adc8d918d79c99636cd673362b70d804cb4",
+    "bytes": 87086,
+    "file": "data/snapshots/tmdsas-guide-residency/2026-08-01-619ed284.html",
+    "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "texasjamp-home",
+    "url": "https://www.texasjamp.org/",
+    "retrievedAt": "2026-08-01T16:23:24.183Z",
+    "sha256": "14003bb9dd23e6807348a4464b85e4a9b26413b6d8a8c9377cc8011db0cce632",
+    "bytes": 57571,
+    "file": "data/snapshots/texasjamp-home/2026-08-01-14003bb9.html",
+    "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "utsw-class-profile",
+    "url": "https://medschool.utsouthwestern.edu/admissions/class-profile.html",
+    "retrievedAt": "2026-08-01T16:23:25.659Z",
+    "sha256": "7e0bc1ab0420c0e9a1a07cfe0466da8836279233936c13c495651e16cc3b6d43",
+    "bytes": 43235,
+    "file": "data/snapshots/utsw-class-profile/2026-08-01-7e0bc1ab.html",
+    "contentType": "text/html;charset=utf-8"
+  }
+]
