@@ -4,19 +4,17 @@
     "sourceId": "tmdsas-dashboard",
     "retrieved": "2026-08-01",
     "snapshotHashes": [
-      "4354efef2030b8a78fbccc53493ab5fff7133728e8435450ad6e8f309bd131c1",
-      "ffa47c619ddb89b031233761cdc4249d5debaa63afab717abdad10adda798fa5",
-      "303db2e1441e40b1e9ffb1888fe1d7aa91bb18fd58df97404f1693e68c71a831",
-      "6e0b51708034b0f4f551b0acd32a5ead9c5e5ae6266bf9ee97b9dcf721090c9a",
-      "8a0321757e3c4bdde46d4582da7f4cec3606b539526e0787aee616ef4bd33a97",
-      "cfc833be6541b2e1310714c7e0298c208c5f3bb12d08ad6096e76ee273d4dba8",
-      "deaea768c11bb95cb14a8450314b71ef413f31aef4d2d5209468c59cd149005c",
-      "363ee15a49958520665abe71a34c08106de9e3f37494e1e3042ffe84604af8d8",
-      "018599ba0afb2ca6e2c207b44edd800c59b016ef2ea573e68be307d87937fa70"
+      "402c6eec4bb69057e2a283c09c92f68171292c7c66127eb8d1eb81a21a94ee00",
+      "fda8a65d0a1afa8d8af1d8af9ac061f60d2deb9d22317aac38cfefbc2ab8119d",
+      "72b2a46985c1a7b64b82e1f6a344560d947537f02616b08fa1466a48e9ad3681",
+      "46030a1f51e68dd31cbe2b3b373d08e652a8d8e180fd5bafa7f1993d3ab50161",
+      "47e44ea078beb2663fdaeb16b907db8f70d750f77a1b49789480a0f5e398f868",
+      "d866bbd93a9d86b5049a42996048f32842cb0b83a813ffc2b4f15d8900f2bbbb",
+      "a05631c4302fbd94577239fec703a69943c222c0dbdb1434252cea9cce2ba70e",
+      "517bd418f13c45eb344b3367be31b7cab81d265096f6e7f2206cef940b3e4768",
+      "3ed7b47d1e29c40d6d474eb6d259152814d708193a24ac9fa9d163fcdd3113e0"
     ],
-    "extractedBy": "scripts/extract-tmdsas.ts",
-    "verifiedBy": "Claude (cross-checked vs 7hacker CC0 dataset and internal totals; owner Gate 3 review pending)",
-    "verifiedOn": "2026-08-01"
+    "extractedBy": "scripts/extract-tmdsas.ts"
   },
   "rows": [
     {

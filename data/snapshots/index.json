@@ -322,5 +322,203 @@
     "bytes": 129538,
     "file": "data/snapshots/aamc-fap-benefits/2026-08-01-7405bc50.html",
     "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-funnel-interviewed",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#funnel-interviewed",
+    "retrievedAt": "2026-08-01T22:07:26.141Z",
+    "sha256": "402c6eec4bb69057e2a283c09c92f68171292c7c66127eb8d1eb81a21a94ee00",
+    "bytes": 11433,
+    "file": "data/snapshots/tmdsas-dashboard-funnel-interviewed/2026-08-01-402c6eec.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-funnel-accepted",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#funnel-accepted",
+    "retrievedAt": "2026-08-01T22:07:26.356Z",
+    "sha256": "fda8a65d0a1afa8d8af1d8af9ac061f60d2deb9d22317aac38cfefbc2ab8119d",
+    "bytes": 11412,
+    "file": "data/snapshots/tmdsas-dashboard-funnel-accepted/2026-08-01-fda8a65d.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-funnel-matriculated",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#funnel-matriculated",
+    "retrievedAt": "2026-08-01T22:07:26.527Z",
+    "sha256": "72b2a46985c1a7b64b82e1f6a344560d947537f02616b08fa1466a48e9ad3681",
+    "bytes": 11232,
+    "file": "data/snapshots/tmdsas-dashboard-funnel-matriculated/2026-08-01-72b2a469.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-residency-applicants",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#residency-applicants",
+    "retrievedAt": "2026-08-01T22:07:26.710Z",
+    "sha256": "46030a1f51e68dd31cbe2b3b373d08e652a8d8e180fd5bafa7f1993d3ab50161",
+    "bytes": 12508,
+    "file": "data/snapshots/tmdsas-dashboard-residency-applicants/2026-08-01-46030a1f.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-residency-interviewed",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#residency-interviewed",
+    "retrievedAt": "2026-08-01T22:07:26.918Z",
+    "sha256": "47e44ea078beb2663fdaeb16b907db8f70d750f77a1b49789480a0f5e398f868",
+    "bytes": 19383,
+    "file": "data/snapshots/tmdsas-dashboard-residency-interviewed/2026-08-01-47e44ea0.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-residency-accepted",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#residency-accepted",
+    "retrievedAt": "2026-08-01T22:07:27.118Z",
+    "sha256": "d866bbd93a9d86b5049a42996048f32842cb0b83a813ffc2b4f15d8900f2bbbb",
+    "bytes": 19363,
+    "file": "data/snapshots/tmdsas-dashboard-residency-accepted/2026-08-01-d866bbd9.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-residency-matriculated",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#residency-matriculated",
+    "retrievedAt": "2026-08-01T22:07:27.303Z",
+    "sha256": "a05631c4302fbd94577239fec703a69943c222c0dbdb1434252cea9cce2ba70e",
+    "bytes": 18940,
+    "file": "data/snapshots/tmdsas-dashboard-residency-matriculated/2026-08-01-a05631c4.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-grid-overall",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#grid-overall",
+    "retrievedAt": "2026-08-01T22:07:27.604Z",
+    "sha256": "517bd418f13c45eb344b3367be31b7cab81d265096f6e7f2206cef940b3e4768",
+    "bytes": 712366,
+    "file": "data/snapshots/tmdsas-dashboard-grid-overall/2026-08-01-517bd418.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-grid-residency",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#grid-residency",
+    "retrievedAt": "2026-08-01T22:07:28.030Z",
+    "sha256": "3ed7b47d1e29c40d6d474eb6d259152814d708193a24ac9fa9d163fcdd3113e0",
+    "bytes": 1131141,
+    "file": "data/snapshots/tmdsas-dashboard-grid-residency/2026-08-01-3ed7b47d.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-type-Reapply-applicants",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#type-Reapply-applicants",
+    "retrievedAt": "2026-08-01T22:07:28.265Z",
+    "sha256": "f54e822dd2d03f1d7c2dc64d13ff9e160caaee5b07b509ffbd98d98bd621e410",
+    "bytes": 11407,
+    "file": "data/snapshots/tmdsas-dashboard-type-Reapply-applicants/2026-08-01-f54e822d.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-type-Reapply-interviewed",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#type-Reapply-interviewed",
+    "retrievedAt": "2026-08-01T22:07:28.482Z",
+    "sha256": "278cce6b014d219f56c1071c1c888b3aad97a303f96a0a17089bb80ee55c254b",
+    "bytes": 18212,
+    "file": "data/snapshots/tmdsas-dashboard-type-Reapply-interviewed/2026-08-01-278cce6b.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-type-Reapply-accepted",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#type-Reapply-accepted",
+    "retrievedAt": "2026-08-01T22:07:28.756Z",
+    "sha256": "1669ede48ced425954587603cb8a8e4b687a512166573f18b79cea1da0cda5ad",
+    "bytes": 18194,
+    "file": "data/snapshots/tmdsas-dashboard-type-Reapply-accepted/2026-08-01-1669ede4.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-type-Reapply-matriculated",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#type-Reapply-matriculated",
+    "retrievedAt": "2026-08-01T22:07:28.882Z",
+    "sha256": "99495c90e944032c86bfe761fe41733f35a900d9140cd9e433ec41c35b23660e",
+    "bytes": 17771,
+    "file": "data/snapshots/tmdsas-dashboard-type-Reapply-matriculated/2026-08-01-99495c90.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-type-NonTrad-applicants",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#type-NonTrad-applicants",
+    "retrievedAt": "2026-08-01T22:07:29.055Z",
+    "sha256": "51d2499a7ffc91f9985d04e4eac72478284529f4d65dc78547ed7f82abffc25e",
+    "bytes": 10582,
+    "file": "data/snapshots/tmdsas-dashboard-type-NonTrad-applicants/2026-08-01-51d2499a.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-type-NonTrad-interviewed",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#type-NonTrad-interviewed",
+    "retrievedAt": "2026-08-01T22:07:29.321Z",
+    "sha256": "ea2131b1c0173aaf7a29b12a5c53f6c9f23b8912441d47acce94d41390ab5889",
+    "bytes": 16425,
+    "file": "data/snapshots/tmdsas-dashboard-type-NonTrad-interviewed/2026-08-01-ea2131b1.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-type-NonTrad-accepted",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#type-NonTrad-accepted",
+    "retrievedAt": "2026-08-01T22:07:29.518Z",
+    "sha256": "5d2a1885f8e1c88904a2c0937d19e8fc823f7a82152c3f7322467aedcef35c9e",
+    "bytes": 16401,
+    "file": "data/snapshots/tmdsas-dashboard-type-NonTrad-accepted/2026-08-01-5d2a1885.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-type-NonTrad-matriculated",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#type-NonTrad-matriculated",
+    "retrievedAt": "2026-08-01T22:07:29.751Z",
+    "sha256": "d8db1769c3d4c6b830456345624c478b3d4d573f27568a06a54e83b2db7e2a57",
+    "bytes": 15978,
+    "file": "data/snapshots/tmdsas-dashboard-type-NonTrad-matriculated/2026-08-01-d8db1769.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "mcgovern-class-snapshot",
+    "url": "https://med.uth.edu/class-snapshot/",
+    "retrievedAt": "2026-08-01T22:09:17.919Z",
+    "sha256": "dbcab911b4779180b0c0c6e7e918aee0116169a684935d3f1ad9757b1bc73727",
+    "bytes": 127388,
+    "file": "data/snapshots/mcgovern-class-snapshot/2026-08-01-dbcab911.html",
+    "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "utmb-admissions-faq",
+    "url": "https://www.utmb.edu/som/admissions-information/ready-to-apply-info/admission-policies-faqs",
+    "retrievedAt": "2026-08-01T22:09:19.513Z",
+    "sha256": "0b5587081aa2a6ec853d6bc48062210065b99d74d1e77d3086ecc7cd69e0463d",
+    "bytes": 126781,
+    "file": "data/snapshots/utmb-admissions-faq/2026-08-01-0b558708.html",
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "sourceId": "dellmed-faq",
+    "url": "https://dellmed.utexas.edu/education/how-to-apply/faqs",
+    "retrievedAt": "2026-08-01T22:09:20.016Z",
+    "sha256": "0dc29190fe4338bb9d03e252cafbfc1f94a550f5aa6e372f6a14187d2c6839c5",
+    "bytes": 93327,
+    "file": "data/snapshots/dellmed-faq/2026-08-01-0dc29190.html",
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "sourceId": "ama-residency",
+    "url": "https://www.ama-assn.org/medical-students/preparing-residency/what-residency",
+    "retrievedAt": "2026-08-01T22:09:23.947Z",
+    "sha256": "8b1b8628d32d45f2295df73ef12262c11038cbd2aa503f2564b0e828ed335ffc",
+    "bytes": 274299,
+    "file": "data/snapshots/ama-residency/2026-08-01-8b1b8628.html",
+    "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "ama-np-physician",
+    "url": "https://www.ama-assn.org/practice-management/scope-practice/whats-difference-between-physicians-and-nurse-practitioners",
+    "retrievedAt": "2026-08-01T22:09:25.320Z",
+    "sha256": "cca7ef624682032edf9a373b691696f09ee6df7cf169a3d1ab6af3570b0f76de",
+    "bytes": 288125,
+    "file": "data/snapshots/ama-np-physician/2026-08-01-cca7ef62.html",
+    "contentType": "text/html; charset=UTF-8"
   }
 ]
