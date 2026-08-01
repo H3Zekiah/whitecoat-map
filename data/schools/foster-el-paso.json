@@ -13,7 +13,7 @@
   },
   "gpaAverage": {
     "unavailable": true,
-    "reason": "school publishes applicant averages (GPA 3.7) on its FAQ, not matriculant statistics",
+    "reason": "school publishes applicant averages (GPA 3.7, science 3.6) on its FAQ rather than figures for the entering class",
     "checkedOn": "2026-08-01"
   },
   "gpaRange": {
@@ -23,7 +23,7 @@
   },
   "mcatAverage": {
     "unavailable": true,
-    "reason": "school publishes applicant averages (MCAT 508) on its FAQ, not matriculant statistics",
+    "reason": "school publishes an applicant average (MCAT 508) on its FAQ rather than a figure for the entering class",
     "checkedOn": "2026-08-01"
   },
   "mcatRange": {

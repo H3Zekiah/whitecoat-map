@@ -248,7 +248,23 @@ export const applicantTypeDatasetSchema = z.object({
   ),
 });
 
+export const backgroundDatasetSchema = z.object({
+  kind: z.literal("background"),
+  provenance: datasetProvenance,
+  rows: z.array(
+    z.object({
+      entryYear,
+      /* "first-generation" or "continuing-generation" */
+      group: z.string().min(1),
+      applicants: count,
+      accepted: count,
+      matriculated: count,
+    }),
+  ),
+});
+
 export const datasetSchemasByKind = {
+  background: backgroundDatasetSchema,
   "applicant-type": applicantTypeDatasetSchema,
   funnel: funnelDatasetSchema,
   "residency-funnel": residencyFunnelDatasetSchema,

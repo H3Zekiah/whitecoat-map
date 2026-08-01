@@ -1,0 +1,590 @@
+{
+  "query": "firstgen-matriculated",
+  "request": {
+    "version": "1.0.0",
+    "queries": [
+      {
+        "Query": {
+          "Commands": [
+            {
+              "SemanticQueryDataShapeCommand": {
+                "Query": {
+                  "Version": 2,
+                  "From": [
+                    {
+                      "Name": "s",
+                      "Entity": "Sheet1",
+                      "Type": 0
+                    }
+                  ],
+                  "Select": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "EntryYear"
+                      },
+                      "Name": "EntryYear"
+                    },
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "Is1stGenerationUndergrad"
+                      },
+                      "Name": "Is1stGenerationUndergrad"
+                    },
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "IsMatriculated"
+                      },
+                      "Name": "IsMatriculated"
+                    },
+                    {
+                      "Measure": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "Count of Total Number of Applicants"
+                      },
+                      "Name": "Cnt"
+                    }
+                  ],
+                  "OrderBy": [
+                    {
+                      "Direction": 1,
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "s"
+                            }
+                          },
+                          "Property": "EntryYear"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "Binding": {
+                  "Primary": {
+                    "Groupings": [
+                      {
+                        "Projections": [
+                          0,
+                          1,
+                          2,
+                          3
+                        ]
+                      }
+                    ]
+                  },
+                  "DataReduction": {
+                    "DataVolume": 3,
+                    "Primary": {
+                      "Window": {
+                        "Count": 30000
+                      }
+                    }
+                  },
+                  "Version": 1
+                }
+              }
+            }
+          ]
+        },
+        "QueryId": "",
+        "ApplicationContext": {
+          "DatasetId": "35ace578-cc42-4994-8718-91c2ad896b8f",
+          "Sources": [
+            {
+              "ReportId": "821982"
+            }
+          ]
+        }
+      }
+    ],
+    "cancelQueries": [],
+    "modelId": 821982
+  },
+  "response": {
+    "jobIds": [
+      "9c630361-8024-40bf-9c53-98998fd2d570"
+    ],
+    "results": [
+      {
+        "jobId": "9c630361-8024-40bf-9c53-98998fd2d570",
+        "result": {
+          "data": {
+            "timestamp": "2026-08-01T23:33:10.146Z",
+            "rootActivityId": "b1dbeed6-4a2c-4c4b-86da-4b52ba07313f",
+            "descriptor": {
+              "Select": [
+                {
+                  "Kind": 1,
+                  "Depth": 0,
+                  "Value": "G0",
+                  "Format": "0",
+                  "GroupKeys": [
+                    {
+                      "Source": {
+                        "Entity": "Sheet1",
+                        "Property": "EntryYear"
+                      },
+                      "Calc": "G0",
+                      "IsSameAsSelect": true
+                    }
+                  ],
+                  "Name": "EntryYear"
+                },
+                {
+                  "Kind": 1,
+                  "Depth": 0,
+                  "Value": "G1",
+                  "Format": "0",
+                  "GroupKeys": [
+                    {
+                      "Source": {
+                        "Entity": "Sheet1",
+                        "Property": "Is1stGenerationUndergrad"
+                      },
+                      "Calc": "G1",
+                      "IsSameAsSelect": true
+                    }
+                  ],
+                  "Name": "Is1stGenerationUndergrad"
+                },
+                {
+                  "Kind": 1,
+                  "Depth": 0,
+                  "Value": "G2",
+                  "GroupKeys": [
+                    {
+                      "Source": {
+                        "Entity": "Sheet1",
+                        "Property": "IsMatriculated"
+                      },
+                      "Calc": "G2",
+                      "IsSameAsSelect": true
+                    }
+                  ],
+                  "Name": "IsMatriculated"
+                },
+                {
+                  "Kind": 2,
+                  "Value": "M0",
+                  "Format": "0",
+                  "Name": "Cnt"
+                }
+              ],
+              "Expressions": {
+                "Primary": {
+                  "Groupings": [
+                    {
+                      "Keys": [
+                        {
+                          "Source": {
+                            "Entity": "Sheet1",
+                            "Property": "EntryYear"
+                          },
+                          "Select": 0
+                        },
+                        {
+                          "Source": {
+                            "Entity": "Sheet1",
+                            "Property": "Is1stGenerationUndergrad"
+                          },
+                          "Select": 1
+                        },
+                        {
+                          "Source": {
+                            "Entity": "Sheet1",
+                            "Property": "IsMatriculated"
+                          },
+                          "Select": 2
+                        }
+                      ],
+                      "Member": "DM0"
+                    }
+                  ]
+                }
+              },
+              "Version": 2
+            },
+            "fromCache": false,
+            "dsr": {
+              "Version": 2,
+              "MinorVersion": 1,
+              "DS": [
+                {
+                  "N": "DS0",
+                  "PH": [
+                    {
+                      "DM0": [
+                        {
+                          "S": [
+                            {
+                              "N": "G0",
+                              "T": 4
+                            },
+                            {
+                              "N": "G1",
+                              "T": 4
+                            },
+                            {
+                              "N": "G2",
+                              "T": 1,
+                              "DN": "D0"
+                            },
+                            {
+                              "N": "M0",
+                              "T": 4
+                            }
+                          ],
+                          "C": [
+                            2016,
+                            0,
+                            0,
+                            1755
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            3977
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            401
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1190
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2017,
+                            0,
+                            0,
+                            1817
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            4161
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            303
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1043
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2018,
+                            0,
+                            0,
+                            1793
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            4249
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            310
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1021
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2019,
+                            0,
+                            0,
+                            1493
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            4810
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            238
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1174
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2020,
+                            0,
+                            0,
+                            1948
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            4500
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            336
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            999
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2021,
+                            0,
+                            0,
+                            1921
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            5843
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            419
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1299
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2022,
+                            0,
+                            0,
+                            2359
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            5154
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            415
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1245
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2023,
+                            0,
+                            0,
+                            2496
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            4922
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            367
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1090
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2024,
+                            0,
+                            0,
+                            2479
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            4933
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            392
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1201
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2025,
+                            0,
+                            0,
+                            2503
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            5370
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            397
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1248
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2026,
+                            0,
+                            8408
+                          ],
+                          "R": 4
+                        },
+                        {
+                          "C": [
+                            1,
+                            1832
+                          ],
+                          "R": 5
+                        }
+                      ]
+                    }
+                  ],
+                  "IC": true,
+                  "HAD": true,
+                  "ValueDicts": {
+                    "D0": [
+                      "Matriculated",
+                      "no"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

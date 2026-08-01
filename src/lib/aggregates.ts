@@ -32,6 +32,10 @@ export const loadResidencyFunnel = () =>
   loadDataset("residency-funnel.json", "residency-funnel");
 export const loadGrid = () =>
   loadDataset("gpa-mcat-grid.json", "gpa-mcat-grid");
+export const loadBackground = () =>
+  loadDataset("background.json", "background");
+export const loadApplicantType = () =>
+  loadDataset("applicant-type.json", "applicant-type");
 export const loadGridByResidency = () =>
   loadDataset("gpa-mcat-grid-residency.json", "gpa-mcat-grid-residency");
 

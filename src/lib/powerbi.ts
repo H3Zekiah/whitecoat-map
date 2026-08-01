@@ -38,6 +38,7 @@ export const COLS = {
   mcatBins: "MCAT B (MATRIX bins)",
   reapply: "Reapply",
   nonTrad: "NonTrad",
+  firstGen: "Is1stGenerationUndergrad",
 } as const;
 
 /* Dictionary labels that mean an outcome flag is true. Everything else
@@ -51,6 +52,8 @@ export const TRUE_LABELS: Record<string, string[]> = {
      explicitly avoids guessing at the false one. */
   [COLS.reapply]: ["Reapplicant"],
   [COLS.nonTrad]: ["Non-Traditional"],
+  /* A 0/1 flag rather than a labelled dictionary; 1 means first-generation. */
+  [COLS.firstGen]: ["1"],
 };
 
 interface ColumnRef {

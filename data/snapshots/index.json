@@ -520,5 +520,185 @@
     "bytes": 288125,
     "file": "data/snapshots/ama-np-physician/2026-08-01-cca7ef62.html",
     "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-funnel-interviewed",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#funnel-interviewed",
+    "retrievedAt": "2026-08-01T23:29:23.872Z",
+    "sha256": "9b1a08099e0cb43d8a8befb21a9b8d1ac99258e917a284e0e09aaa6de9b5a168",
+    "bytes": 11433,
+    "file": "data/snapshots/tmdsas-dashboard-funnel-interviewed/2026-08-01-9b1a0809.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-funnel-accepted",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#funnel-accepted",
+    "retrievedAt": "2026-08-01T23:29:24.083Z",
+    "sha256": "08a20a0de5c884c32718749af9e6bbcafed2b76d3c7b96564e6770a24c3d21af",
+    "bytes": 11412,
+    "file": "data/snapshots/tmdsas-dashboard-funnel-accepted/2026-08-01-08a20a0d.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-funnel-matriculated",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#funnel-matriculated",
+    "retrievedAt": "2026-08-01T23:29:24.306Z",
+    "sha256": "f99429db75c4aa400c5a62da72221a311a0d63d0ae754c7ea4c7e0983ea79b36",
+    "bytes": 11232,
+    "file": "data/snapshots/tmdsas-dashboard-funnel-matriculated/2026-08-01-f99429db.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-residency-applicants",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#residency-applicants",
+    "retrievedAt": "2026-08-01T23:29:24.651Z",
+    "sha256": "337f825320846fb45b5ddaca749f507e5c4b153f73bf09022e96fbf1a9c35e3d",
+    "bytes": 12508,
+    "file": "data/snapshots/tmdsas-dashboard-residency-applicants/2026-08-01-337f8253.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-residency-interviewed",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#residency-interviewed",
+    "retrievedAt": "2026-08-01T23:29:24.871Z",
+    "sha256": "06f447d8934776d57b337ec0ec29b02859133cf02cbd324c7e3b0e25efd780d4",
+    "bytes": 19384,
+    "file": "data/snapshots/tmdsas-dashboard-residency-interviewed/2026-08-01-06f447d8.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-residency-accepted",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#residency-accepted",
+    "retrievedAt": "2026-08-01T23:29:25.101Z",
+    "sha256": "ca7927f9028d17a196065d9a61db8c9ecd0ee5a3910f8c66b5cde12536c93364",
+    "bytes": 19363,
+    "file": "data/snapshots/tmdsas-dashboard-residency-accepted/2026-08-01-ca7927f9.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-residency-matriculated",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#residency-matriculated",
+    "retrievedAt": "2026-08-01T23:29:25.291Z",
+    "sha256": "9d0995b96b92c71e4d43eec25ade8174838ebf90095d9b80edd3d7dc32c1c9cc",
+    "bytes": 18940,
+    "file": "data/snapshots/tmdsas-dashboard-residency-matriculated/2026-08-01-9d0995b9.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-grid-overall",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#grid-overall",
+    "retrievedAt": "2026-08-01T23:29:25.557Z",
+    "sha256": "4a61dafc70367d77368a3ab2795e6fd8518a8065fc40496449fe229cb14bb5a1",
+    "bytes": 712366,
+    "file": "data/snapshots/tmdsas-dashboard-grid-overall/2026-08-01-4a61dafc.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-grid-residency",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#grid-residency",
+    "retrievedAt": "2026-08-01T23:29:25.892Z",
+    "sha256": "c238a03a70fccdec85139f37957151025225b8a9b3a2522254435cab41cf5e50",
+    "bytes": 1131141,
+    "file": "data/snapshots/tmdsas-dashboard-grid-residency/2026-08-01-c238a03a.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-type-Reapply-applicants",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#type-Reapply-applicants",
+    "retrievedAt": "2026-08-01T23:29:26.181Z",
+    "sha256": "412a206fcb1d4338da49857cd9d211d772b073e64b394131ba69bfaf61b5bfd4",
+    "bytes": 11406,
+    "file": "data/snapshots/tmdsas-dashboard-type-Reapply-applicants/2026-08-01-412a206f.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-type-Reapply-interviewed",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#type-Reapply-interviewed",
+    "retrievedAt": "2026-08-01T23:29:26.375Z",
+    "sha256": "5350260135f8698250ad58fe327e8168af053f8e1376aaa912632594eb527fef",
+    "bytes": 18213,
+    "file": "data/snapshots/tmdsas-dashboard-type-Reapply-interviewed/2026-08-01-53502601.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-type-Reapply-accepted",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#type-Reapply-accepted",
+    "retrievedAt": "2026-08-01T23:29:26.588Z",
+    "sha256": "23d141cc29e8457c66a80315b82a1983fa4dccee0b30994ba616b11b70dfeacf",
+    "bytes": 18194,
+    "file": "data/snapshots/tmdsas-dashboard-type-Reapply-accepted/2026-08-01-23d141cc.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-type-Reapply-matriculated",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#type-Reapply-matriculated",
+    "retrievedAt": "2026-08-01T23:29:26.801Z",
+    "sha256": "38b2fab8a51963c2186c44f20aa46fe265074f7559109bdcafc2d6edd1f6c9a5",
+    "bytes": 17771,
+    "file": "data/snapshots/tmdsas-dashboard-type-Reapply-matriculated/2026-08-01-38b2fab8.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-type-NonTrad-applicants",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#type-NonTrad-applicants",
+    "retrievedAt": "2026-08-01T23:29:27.020Z",
+    "sha256": "dd047e0e8619d36468b70998a6e8b707ec7e652ca974062bbefe904880e7c739",
+    "bytes": 10582,
+    "file": "data/snapshots/tmdsas-dashboard-type-NonTrad-applicants/2026-08-01-dd047e0e.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-type-NonTrad-interviewed",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#type-NonTrad-interviewed",
+    "retrievedAt": "2026-08-01T23:29:27.162Z",
+    "sha256": "456432e3e394fe0c5e66bc164aff49a65141e40b01c13bdbb43ec8e202cfdaf8",
+    "bytes": 16425,
+    "file": "data/snapshots/tmdsas-dashboard-type-NonTrad-interviewed/2026-08-01-456432e3.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-type-NonTrad-accepted",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#type-NonTrad-accepted",
+    "retrievedAt": "2026-08-01T23:29:27.384Z",
+    "sha256": "d0be8a4e9637e9c6824052ceb7558be7bd4edebd5bbc1be4eb364ca6706a36fe",
+    "bytes": 16401,
+    "file": "data/snapshots/tmdsas-dashboard-type-NonTrad-accepted/2026-08-01-d0be8a4e.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-type-NonTrad-matriculated",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#type-NonTrad-matriculated",
+    "retrievedAt": "2026-08-01T23:29:27.584Z",
+    "sha256": "bef93bfd6ea8678ed84ecf3543bc2db030e960701cd46e356bd8982bbb7d6132",
+    "bytes": 15978,
+    "file": "data/snapshots/tmdsas-dashboard-type-NonTrad-matriculated/2026-08-01-bef93bfd.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-firstgen-applicants",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#firstgen-applicants",
+    "retrievedAt": "2026-08-01T23:33:51.659Z",
+    "sha256": "4ef277487f6e43041341de3abee5fc659a4dc256368f9ac829337097215de76f",
+    "bytes": 11311,
+    "file": "data/snapshots/tmdsas-dashboard-firstgen-applicants/2026-08-01-4ef27748.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-firstgen-accepted",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#firstgen-accepted",
+    "retrievedAt": "2026-08-01T23:33:51.714Z",
+    "sha256": "8d889975f0e4492de9e3f72183a17e3b8eca15e96b7c8c1d5216ea0073d68cbf",
+    "bytes": 18150,
+    "file": "data/snapshots/tmdsas-dashboard-firstgen-accepted/2026-08-01-8d889975.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-firstgen-matriculated",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#firstgen-matriculated",
+    "retrievedAt": "2026-08-01T23:33:51.784Z",
+    "sha256": "7e5944a171fcb90d3b491db82d94dceb1193d803629cbc58ab349c3536ba8dac",
+    "bytes": 17728,
+    "file": "data/snapshots/tmdsas-dashboard-firstgen-matriculated/2026-08-01-7e5944a1.json",
+    "contentType": "application/json"
   }
 ]

@@ -1,0 +1,188 @@
+{
+  "kind": "background",
+  "provenance": {
+    "sourceId": "tmdsas-dashboard",
+    "retrieved": "2026-08-01",
+    "snapshotHashes": [
+      "9b1a08099e0cb43d8a8befb21a9b8d1ac99258e917a284e0e09aaa6de9b5a168",
+      "08a20a0de5c884c32718749af9e6bbcafed2b76d3c7b96564e6770a24c3d21af",
+      "f99429db75c4aa400c5a62da72221a311a0d63d0ae754c7ea4c7e0983ea79b36",
+      "337f825320846fb45b5ddaca749f507e5c4b153f73bf09022e96fbf1a9c35e3d",
+      "06f447d8934776d57b337ec0ec29b02859133cf02cbd324c7e3b0e25efd780d4",
+      "ca7927f9028d17a196065d9a61db8c9ecd0ee5a3910f8c66b5cde12536c93364",
+      "9d0995b96b92c71e4d43eec25ade8174838ebf90095d9b80edd3d7dc32c1c9cc",
+      "4a61dafc70367d77368a3ab2795e6fd8518a8065fc40496449fe229cb14bb5a1",
+      "c238a03a70fccdec85139f37957151025225b8a9b3a2522254435cab41cf5e50",
+      "412a206fcb1d4338da49857cd9d211d772b073e64b394131ba69bfaf61b5bfd4",
+      "5350260135f8698250ad58fe327e8168af053f8e1376aaa912632594eb527fef",
+      "23d141cc29e8457c66a80315b82a1983fa4dccee0b30994ba616b11b70dfeacf",
+      "38b2fab8a51963c2186c44f20aa46fe265074f7559109bdcafc2d6edd1f6c9a5",
+      "dd047e0e8619d36468b70998a6e8b707ec7e652ca974062bbefe904880e7c739",
+      "456432e3e394fe0c5e66bc164aff49a65141e40b01c13bdbb43ec8e202cfdaf8",
+      "d0be8a4e9637e9c6824052ceb7558be7bd4edebd5bbc1be4eb364ca6706a36fe",
+      "bef93bfd6ea8678ed84ecf3543bc2db030e960701cd46e356bd8982bbb7d6132",
+      "4ef277487f6e43041341de3abee5fc659a4dc256368f9ac829337097215de76f",
+      "8d889975f0e4492de9e3f72183a17e3b8eca15e96b7c8c1d5216ea0073d68cbf",
+      "7e5944a171fcb90d3b491db82d94dceb1193d803629cbc58ab349c3536ba8dac"
+    ],
+    "extractedBy": "scripts/extract-tmdsas.ts",
+    "verifiedBy": "Claude (cross-checked: group totals sum to the funnel applicant count; owner Gate 3 review pending)",
+    "verifiedOn": "2026-08-01"
+  },
+  "rows": [
+    {
+      "entryYear": 2016,
+      "group": "first-generation",
+      "applicants": 1591,
+      "accepted": 441,
+      "matriculated": 401
+    },
+    {
+      "entryYear": 2016,
+      "group": "continuing-generation",
+      "applicants": 5732,
+      "accepted": 2112,
+      "matriculated": 1755
+    },
+    {
+      "entryYear": 2017,
+      "group": "first-generation",
+      "applicants": 1346,
+      "accepted": 325,
+      "matriculated": 303
+    },
+    {
+      "entryYear": 2017,
+      "group": "continuing-generation",
+      "applicants": 5978,
+      "accepted": 2209,
+      "matriculated": 1817
+    },
+    {
+      "entryYear": 2018,
+      "group": "first-generation",
+      "applicants": 1331,
+      "accepted": 333,
+      "matriculated": 310
+    },
+    {
+      "entryYear": 2018,
+      "group": "continuing-generation",
+      "applicants": 6042,
+      "accepted": 2191,
+      "matriculated": 1793
+    },
+    {
+      "entryYear": 2019,
+      "group": "first-generation",
+      "applicants": 1412,
+      "accepted": 346,
+      "matriculated": 238
+    },
+    {
+      "entryYear": 2019,
+      "group": "continuing-generation",
+      "applicants": 6303,
+      "accepted": 2134,
+      "matriculated": 1493
+    },
+    {
+      "entryYear": 2020,
+      "group": "first-generation",
+      "applicants": 1335,
+      "accepted": 384,
+      "matriculated": 336
+    },
+    {
+      "entryYear": 2020,
+      "group": "continuing-generation",
+      "applicants": 6448,
+      "accepted": 2365,
+      "matriculated": 1948
+    },
+    {
+      "entryYear": 2021,
+      "group": "first-generation",
+      "applicants": 1718,
+      "accepted": 483,
+      "matriculated": 419
+    },
+    {
+      "entryYear": 2021,
+      "group": "continuing-generation",
+      "applicants": 7764,
+      "accepted": 2431,
+      "matriculated": 1921
+    },
+    {
+      "entryYear": 2022,
+      "group": "first-generation",
+      "applicants": 1660,
+      "accepted": 475,
+      "matriculated": 415
+    },
+    {
+      "entryYear": 2022,
+      "group": "continuing-generation",
+      "applicants": 7513,
+      "accepted": 2760,
+      "matriculated": 2359
+    },
+    {
+      "entryYear": 2023,
+      "group": "first-generation",
+      "applicants": 1457,
+      "accepted": 422,
+      "matriculated": 367
+    },
+    {
+      "entryYear": 2023,
+      "group": "continuing-generation",
+      "applicants": 7418,
+      "accepted": 2916,
+      "matriculated": 2496
+    },
+    {
+      "entryYear": 2024,
+      "group": "first-generation",
+      "applicants": 1593,
+      "accepted": 433,
+      "matriculated": 392
+    },
+    {
+      "entryYear": 2024,
+      "group": "continuing-generation",
+      "applicants": 7412,
+      "accepted": 2867,
+      "matriculated": 2479
+    },
+    {
+      "entryYear": 2025,
+      "group": "first-generation",
+      "applicants": 1645,
+      "accepted": 440,
+      "matriculated": 397
+    },
+    {
+      "entryYear": 2025,
+      "group": "continuing-generation",
+      "applicants": 7873,
+      "accepted": 2855,
+      "matriculated": 2503
+    },
+    {
+      "entryYear": 2026,
+      "group": "first-generation",
+      "applicants": 1832,
+      "accepted": 163,
+      "matriculated": 0
+    },
+    {
+      "entryYear": 2026,
+      "group": "continuing-generation",
+      "applicants": 8408,
+      "accepted": 1086,
+      "matriculated": 0
+    }
+  ]
+}

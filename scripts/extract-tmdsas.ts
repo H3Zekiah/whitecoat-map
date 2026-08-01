@@ -115,13 +115,51 @@ function provenance() {
   };
 }
 
-function writeDataset(filename: string, dataset: object) {
+/*
+ * Verification attaches to the VALUES, not to the extraction run. If a
+ * re-extraction produces identical rows, the previous human verification
+ * is still true and is carried forward — otherwise a routine refresh
+ * silently blanks every chart on the site, which is exactly what happened
+ * once. When rows do change, verification is dropped and said so loudly,
+ * because those numbers genuinely have not been checked.
+ */
+function writeDataset(
+  filename: string,
+  dataset: {
+    kind: string;
+    provenance: Record<string, unknown>;
+    rows: unknown[];
+  },
+) {
   const dir = path.join(DATA_ROOT, "aggregates");
   fs.mkdirSync(dir, { recursive: true });
-  const p = path.join(dir, filename);
-  fs.writeFileSync(p, JSON.stringify(dataset, null, 2) + "\n");
-  console.log(`WROTE      data/aggregates/${filename}`);
+  const target = path.join(dir, filename);
+
+  let carried = false;
+  if (fs.existsSync(target)) {
+    const previous = JSON.parse(fs.readFileSync(target, "utf8")) as {
+      provenance?: { verifiedBy?: string; verifiedOn?: string };
+      rows?: unknown[];
+    };
+    const unchanged =
+      JSON.stringify(previous.rows) === JSON.stringify(dataset.rows);
+    if (unchanged && previous.provenance?.verifiedBy) {
+      dataset.provenance.verifiedBy = previous.provenance.verifiedBy;
+      dataset.provenance.verifiedOn = previous.provenance.verifiedOn;
+      carried = true;
+    } else if (!unchanged && previous.provenance?.verifiedBy) {
+      changedDatasets.push(filename);
+    }
+  }
+
+  fs.writeFileSync(target, JSON.stringify(dataset, null, 2) + "\n");
+  console.log(
+    `WROTE      data/aggregates/${filename}${carried ? "  (verification carried forward — rows unchanged)" : ""}`,
+  );
 }
+
+/* Datasets whose values moved and therefore lost their verification. */
+const changedDatasets: string[] = [];
 
 /* ---------- transforms ---------- */
 
@@ -301,9 +339,17 @@ for (const r of funnelRows) {
     `  EY${r.entryYear}  applicants ${r.applicants}  interviewed ${r.interviewed}  accepted ${r.accepted}  matriculated ${r.matriculated}`,
   );
 }
-console.log(
-  "\nDatasets written UNVERIFIED: verifiedBy/verifiedOn are empty until a human checks figures against the dashboard (Gate 3). Unverified datasets do not render.",
-);
+if (changedDatasets.length > 0) {
+  console.log(
+    `\nVALUES CHANGED in ${changedDatasets.join(", ")} — verification was dropped.\n` +
+      "Those figures are now UNVERIFIED and their charts will render a placeholder\n" +
+      "until a human re-checks them against the dashboard and re-stamps provenance.",
+  );
+} else {
+  console.log(
+    "\nAll datasets unchanged; existing verification carried forward.",
+  );
+}
 
 /* 4. Applicant-type outcomes (reapplicant, non-traditional) */
 const typeRows: object[] = [];
@@ -378,4 +424,61 @@ writeDataset("applicant-type.json", {
   kind: "applicant-type",
   provenance: provenance(),
   rows: typeRows,
+});
+
+/* 5. First-generation outcomes.
+ *
+ * The flag is 0/1 rather than a labelled dictionary. This is the single
+ * most relevant series to this project's purpose, so it is extracted as
+ * its own dataset rather than folded into applicant types. */
+const fgBase = await groupedCount(resourceKey, "firstgen-applicants", [
+  COLS.entryYear,
+  COLS.firstGen,
+]);
+const fgAcc = await groupedCount(resourceKey, "firstgen-accepted", [
+  COLS.entryYear,
+  COLS.firstGen,
+  COLS.isAccepted,
+]);
+const fgMat = await groupedCount(resourceKey, "firstgen-matriculated", [
+  COLS.entryYear,
+  COLS.firstGen,
+  COLS.isMatriculated,
+]);
+
+const groupName = (flag: Cell) =>
+  Number(flag) === 1 ? "first-generation" : "continuing-generation";
+
+const fgRows: object[] = [];
+const fgYears = [...new Set(fgBase.map((r) => Number(r[0])))].sort();
+for (const year of fgYears) {
+  for (const flag of [1, 0]) {
+    const applicants = fgBase
+      .filter((r) => Number(r[0]) === year && Number(r[1]) === flag)
+      .reduce((s, r) => s + Number(r[2]), 0);
+    if (applicants === 0) continue;
+    const sum = (rows: Cell[][], trueLabels: string[]) =>
+      rows
+        .filter(
+          (r) =>
+            Number(r[0]) === year &&
+            Number(r[1]) === flag &&
+            typeof r[2] === "string" &&
+            trueLabels.includes(r[2]),
+        )
+        .reduce((s, r) => s + Number(r[3]), 0);
+    fgRows.push({
+      entryYear: year,
+      group: groupName(flag),
+      applicants,
+      accepted: sum(fgAcc, TRUE_LABELS[COLS.isAccepted]),
+      matriculated: sum(fgMat, TRUE_LABELS[COLS.isMatriculated]),
+    });
+  }
+}
+
+writeDataset("background.json", {
+  kind: "background",
+  provenance: provenance(),
+  rows: fgRows,
 });

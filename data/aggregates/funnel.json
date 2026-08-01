@@ -4,11 +4,13 @@
     "sourceId": "tmdsas-dashboard",
     "retrieved": "2026-08-01",
     "snapshotHashes": [
-      "402c6eec4bb69057e2a283c09c92f68171292c7c66127eb8d1eb81a21a94ee00",
-      "fda8a65d0a1afa8d8af1d8af9ac061f60d2deb9d22317aac38cfefbc2ab8119d",
-      "72b2a46985c1a7b64b82e1f6a344560d947537f02616b08fa1466a48e9ad3681"
+      "9b1a08099e0cb43d8a8befb21a9b8d1ac99258e917a284e0e09aaa6de9b5a168",
+      "08a20a0de5c884c32718749af9e6bbcafed2b76d3c7b96564e6770a24c3d21af",
+      "f99429db75c4aa400c5a62da72221a311a0d63d0ae754c7ea4c7e0983ea79b36"
     ],
-    "extractedBy": "scripts/extract-tmdsas.ts"
+    "extractedBy": "scripts/extract-tmdsas.ts",
+    "verifiedBy": "Claude (cross-checked vs 7hacker CC0 dataset and internal totals; owner Gate 3 review pending)",
+    "verifiedOn": "2026-08-01"
   },
   "rows": [
     {

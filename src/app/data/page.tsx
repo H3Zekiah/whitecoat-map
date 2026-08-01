@@ -7,6 +7,7 @@ import { PageShell } from "@/components/PageShell";
 import { WhereIStand } from "@/components/WhereIStand";
 import {
   TMDSAS_DASHBOARD,
+  loadBackground,
   loadFunnel,
   loadGrid,
   loadResidencyFunnel,
@@ -38,6 +39,7 @@ export default function DataPage() {
   const funnel = loadFunnel();
   const residency = loadResidencyFunnel();
   const grid = loadGrid();
+  const background = loadBackground();
 
   const latest = funnel ? latestCompleteYear(funnel.rows) : null;
   const stages = latest ? buildFunnel(latest) : null;
@@ -134,6 +136,75 @@ export default function DataPage() {
             </div>
           </ChartFigure>
         ) : null}
+
+        {background && latest ? (
+          <ChartFigure
+            title="First-generation applicants"
+            description={`Texans whose parents did not complete a four-year degree, compared with everyone else (entry year ${latest.entryYear}).`}
+            source={{ ...TMDSAS_DASHBOARD, verifiedOn }}
+            tableCaption={`TMDSAS outcomes by first-generation status, entry years ${background.rows[0]?.entryYear}–${latest.entryYear}`}
+            tableHead={[
+              "Entry year",
+              "Group",
+              "Applied",
+              "Accepted",
+              "Accepted share",
+            ]}
+            tableRows={background.rows.map((r) => [
+              r.entryYear,
+              r.group === "first-generation"
+                ? "First-generation"
+                : "Continuing-generation",
+              r.applicants.toLocaleString("en-US"),
+              r.accepted.toLocaleString("en-US"),
+              `${Math.round((r.accepted / r.applicants) * 100)}%`,
+            ])}
+          >
+            <div className="space-y-6">
+              {background.rows
+                .filter((r) => r.entryYear === latest.entryYear)
+                .map((r) => (
+                  <div key={r.group}>
+                    <p className="mb-2 text-sm font-medium">
+                      {r.group === "first-generation"
+                        ? "First-generation"
+                        : "Continuing-generation"}
+                    </p>
+                    <FunnelChart
+                      stages={[
+                        {
+                          stage: "Applied",
+                          count: r.applicants,
+                          shareOfApplicants: 1,
+                        },
+                        {
+                          stage: "Accepted",
+                          count: r.accepted,
+                          shareOfApplicants: r.accepted / r.applicants,
+                        },
+                        {
+                          stage: "Started school",
+                          count: r.matriculated,
+                          shareOfApplicants: r.matriculated / r.applicants,
+                        },
+                      ]}
+                    />
+                  </div>
+                ))}
+            </div>
+          </ChartFigure>
+        ) : null}
+
+        <Callout variant="note" title="Why this gap is on this page">
+          First-generation applicants are roughly one in six Texas applicants
+          and are accepted at about ten percentage points below everyone else —
+          a gap that has held for five straight years. That difference is not
+          about ability. It is what happens when nobody tells you how the
+          process works: which deadlines come early, that JAMP exists, that
+          applying in May beats applying in September. Several hundred
+          first-generation students start Texas medical school every year, and
+          this entire site exists to make that number larger.
+        </Callout>
 
         {trend && trend.length > 1 ? (
           <ChartFigure

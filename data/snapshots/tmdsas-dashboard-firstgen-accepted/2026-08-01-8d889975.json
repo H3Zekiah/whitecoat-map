@@ -1,0 +1,605 @@
+{
+  "query": "firstgen-accepted",
+  "request": {
+    "version": "1.0.0",
+    "queries": [
+      {
+        "Query": {
+          "Commands": [
+            {
+              "SemanticQueryDataShapeCommand": {
+                "Query": {
+                  "Version": 2,
+                  "From": [
+                    {
+                      "Name": "s",
+                      "Entity": "Sheet1",
+                      "Type": 0
+                    }
+                  ],
+                  "Select": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "EntryYear"
+                      },
+                      "Name": "EntryYear"
+                    },
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "Is1stGenerationUndergrad"
+                      },
+                      "Name": "Is1stGenerationUndergrad"
+                    },
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "IsAccepted"
+                      },
+                      "Name": "IsAccepted"
+                    },
+                    {
+                      "Measure": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "Count of Total Number of Applicants"
+                      },
+                      "Name": "Cnt"
+                    }
+                  ],
+                  "OrderBy": [
+                    {
+                      "Direction": 1,
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "s"
+                            }
+                          },
+                          "Property": "EntryYear"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "Binding": {
+                  "Primary": {
+                    "Groupings": [
+                      {
+                        "Projections": [
+                          0,
+                          1,
+                          2,
+                          3
+                        ]
+                      }
+                    ]
+                  },
+                  "DataReduction": {
+                    "DataVolume": 3,
+                    "Primary": {
+                      "Window": {
+                        "Count": 30000
+                      }
+                    }
+                  },
+                  "Version": 1
+                }
+              }
+            }
+          ]
+        },
+        "QueryId": "",
+        "ApplicationContext": {
+          "DatasetId": "35ace578-cc42-4994-8718-91c2ad896b8f",
+          "Sources": [
+            {
+              "ReportId": "821982"
+            }
+          ]
+        }
+      }
+    ],
+    "cancelQueries": [],
+    "modelId": 821982
+  },
+  "response": {
+    "jobIds": [
+      "9ce24f4c-3808-4879-89a7-5fea41a260f8"
+    ],
+    "results": [
+      {
+        "jobId": "9ce24f4c-3808-4879-89a7-5fea41a260f8",
+        "result": {
+          "data": {
+            "timestamp": "2026-08-01T23:32:51.628Z",
+            "rootActivityId": "48d18abe-4268-4e9f-b488-3c454546582e",
+            "descriptor": {
+              "Select": [
+                {
+                  "Kind": 1,
+                  "Depth": 0,
+                  "Value": "G0",
+                  "Format": "0",
+                  "GroupKeys": [
+                    {
+                      "Source": {
+                        "Entity": "Sheet1",
+                        "Property": "EntryYear"
+                      },
+                      "Calc": "G0",
+                      "IsSameAsSelect": true
+                    }
+                  ],
+                  "Name": "EntryYear"
+                },
+                {
+                  "Kind": 1,
+                  "Depth": 0,
+                  "Value": "G1",
+                  "Format": "0",
+                  "GroupKeys": [
+                    {
+                      "Source": {
+                        "Entity": "Sheet1",
+                        "Property": "Is1stGenerationUndergrad"
+                      },
+                      "Calc": "G1",
+                      "IsSameAsSelect": true
+                    }
+                  ],
+                  "Name": "Is1stGenerationUndergrad"
+                },
+                {
+                  "Kind": 1,
+                  "Depth": 0,
+                  "Value": "G2",
+                  "GroupKeys": [
+                    {
+                      "Source": {
+                        "Entity": "Sheet1",
+                        "Property": "IsAccepted"
+                      },
+                      "Calc": "G2",
+                      "IsSameAsSelect": true
+                    }
+                  ],
+                  "Name": "IsAccepted"
+                },
+                {
+                  "Kind": 2,
+                  "Value": "M0",
+                  "Format": "0",
+                  "Name": "Cnt"
+                }
+              ],
+              "Expressions": {
+                "Primary": {
+                  "Groupings": [
+                    {
+                      "Keys": [
+                        {
+                          "Source": {
+                            "Entity": "Sheet1",
+                            "Property": "EntryYear"
+                          },
+                          "Select": 0
+                        },
+                        {
+                          "Source": {
+                            "Entity": "Sheet1",
+                            "Property": "Is1stGenerationUndergrad"
+                          },
+                          "Select": 1
+                        },
+                        {
+                          "Source": {
+                            "Entity": "Sheet1",
+                            "Property": "IsAccepted"
+                          },
+                          "Select": 2
+                        }
+                      ],
+                      "Member": "DM0"
+                    }
+                  ]
+                }
+              },
+              "Version": 2
+            },
+            "fromCache": false,
+            "dsr": {
+              "Version": 2,
+              "MinorVersion": 1,
+              "DS": [
+                {
+                  "N": "DS0",
+                  "PH": [
+                    {
+                      "DM0": [
+                        {
+                          "S": [
+                            {
+                              "N": "G0",
+                              "T": 4
+                            },
+                            {
+                              "N": "G1",
+                              "T": 4
+                            },
+                            {
+                              "N": "G2",
+                              "T": 1,
+                              "DN": "D0"
+                            },
+                            {
+                              "N": "M0",
+                              "T": 4
+                            }
+                          ],
+                          "C": [
+                            2016,
+                            0,
+                            0,
+                            2112
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            3620
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            441
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1150
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2017,
+                            0,
+                            0,
+                            2209
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            3769
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            325
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1021
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2018,
+                            0,
+                            0,
+                            2191
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            3851
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            333
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            998
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2019,
+                            0,
+                            0,
+                            2134
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            4169
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            346
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1066
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2020,
+                            0,
+                            0,
+                            2365
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            4083
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            384
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            951
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2021,
+                            0,
+                            0,
+                            2431
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            5333
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            483
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1235
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2022,
+                            0,
+                            0,
+                            2760
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            4753
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            475
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1185
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2023,
+                            0,
+                            0,
+                            2916
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            4502
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            422
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1035
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2024,
+                            0,
+                            0,
+                            2867
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            4545
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            433
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1160
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2025,
+                            0,
+                            0,
+                            2855
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            5018
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            440
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1205
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            2026,
+                            0,
+                            0,
+                            1086
+                          ]
+                        },
+                        {
+                          "C": [
+                            1,
+                            7322
+                          ],
+                          "R": 3
+                        },
+                        {
+                          "C": [
+                            1,
+                            0,
+                            163
+                          ],
+                          "R": 1
+                        },
+                        {
+                          "C": [
+                            1,
+                            1669
+                          ],
+                          "R": 3
+                        }
+                      ]
+                    }
+                  ],
+                  "IC": true,
+                  "HAD": true,
+                  "ValueDicts": {
+                    "D0": [
+                      "Accepted",
+                      "no"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}
