@@ -10,7 +10,7 @@
 
 Sequential steps, each with a definition of done. Each step is one commit or a small series of commits on a branch. **Gates** are points where work stops for your review before continuing.
 
-Following your usual cadence: this plan builds the **base system** end to end. Granular tickets and PRs come *after* a working base exists, so we are not filing speculative tickets that go stale.
+Following your usual cadence: this plan builds the **base system** end to end. Granular tickets and PRs come _after_ a working base exists, so we are not filing speculative tickets that go stale.
 
 Relative sizing: **S** a sitting, **M** a day or two of focused work, **L** several days. Content writing is sized separately because it is your time, not build time.
 
@@ -25,14 +25,15 @@ The entire product rests on the claim that this data is obtainable, primary, and
 Enumerate, for every number the site intends to display, exactly which document provides it.
 
 Targets:
-- **Acceptance landscape grid.** The known problem: TMDSAS publishes GPA and MCAT *separately, never crossed*. GradPilot claims a crossed grid derived from an open dataset. Determine what the underlying source actually is, whether it is reproducible from primary documents, and whether the crossed view can be built at all without third-party derivation.
+
+- **Acceptance landscape grid.** The known problem: TMDSAS publishes GPA and MCAT _separately, never crossed_. GradPilot claims a crossed grid derived from an open dataset. Determine what the underlying source actually is, whether it is reproducible from primary documents, and whether the crossed view can be built at all without third-party derivation.
 - **Texas funnel.** Applicant → interview → accepted → matriculated counts. Verify whether interview-stage counts are published anywhere; this is the stage most likely to be missing.
-- **Per-school profiles.** For all TMDSAS-participating medical programs: GPA and MCAT medians *and ranges*, class size, in-state share, cost, prerequisites, deadlines. Ranges are the risk — many schools publish medians only.
+- **Per-school profiles.** For all TMDSAS-participating medical programs: GPA and MCAT medians _and ranges_, class size, in-state share, cost, prerequisites, deadlines. Ranges are the risk — many schools publish medians only.
 - **Trends over time.** Ten-year series from TMDSAS data reports and Texas Higher Education Coordinating Board publications.
 
 Known source pool to work through: TMDSAS stats dashboard and data reports, TMDSAS application guide, Texas Higher Education Coordinating Board / txhes.com publications, UT Austin Health Professions Office admission report executive summaries, AAMC free reports and FACTS tables, AACOM research reports, each school's own admissions and class profile pages, texasjamp.org, GradPilot's open GitHub dataset.
 
-**Definition of done:** `docs/SOURCES.md` exists, listing every intended data field with its source document, publisher, URL, cadence, and a verdict of *primary / third-party derived / not obtainable*. Each of the four visualizations carries an explicit go / modify / drop recommendation.
+**Definition of done:** `docs/SOURCES.md` exists, listing every intended data field with its source document, publisher, URL, cadence, and a verdict of _primary / third-party derived / not obtainable_. Each of the four visualizations carries an explicit go / modify / drop recommendation.
 
 ### GATE 1 — Data reality check
 
@@ -218,7 +219,7 @@ Once the system is live and working, refinements become individual tickets with 
 
 **The slowest work is not the code.** Step 2.4 (school directory data) and Phase 4 (writing) dominate the schedule. The application itself is a few weeks of build; verified data and well-written guides are the actual project.
 
-**Gate 1 can invalidate a headline feature.** The acceptance landscape grid depends on data TMDSAS deliberately does not publish crossed. If it cannot be sourced primarily, the options are to cite GradPilot's derived dataset with attribution, to redesign the visualization around what *is* publishable, or to drop it. Better to learn this in week one than after building it.
+**Gate 1 can invalidate a headline feature.** The acceptance landscape grid depends on data TMDSAS deliberately does not publish crossed. If it cannot be sourced primarily, the options are to cite GradPilot's derived dataset with attribution, to redesign the visualization around what _is_ publishable, or to drop it. Better to learn this in week one than after building it.
 
 **Interview-stage funnel data may not exist publicly.** If so, the funnel becomes applied → accepted → matriculated, which is still worth showing.
 
