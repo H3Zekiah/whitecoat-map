@@ -1,0 +1,39 @@
+{
+  "slug": "fertitta",
+  "name": "Tilman J. Fertitta Family College of Medicine, University of Houston",
+  "shortName": "Fertitta (UH)",
+  "degree": "MD",
+  "applicationService": "TMDSAS",
+  "city": "Houston",
+  "website": "https://www.uh.edu/medicine/",
+  "classSize": {
+    "unavailable": true,
+    "reason": "class size not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  },
+  "gpaAverage": {
+    "value": 3.6,
+    "sourceId": "uh-fertitta-admissions-faq",
+    "retrieved": "2026-08-01"
+  },
+  "gpaRange": {
+    "unavailable": true,
+    "reason": "GPA range not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  },
+  "mcatAverage": {
+    "value": 503,
+    "sourceId": "uh-fertitta-admissions-faq",
+    "retrieved": "2026-08-01"
+  },
+  "mcatRange": {
+    "unavailable": true,
+    "reason": "MCAT range not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  },
+  "inStatePercent": {
+    "unavailable": true,
+    "reason": "Texas-resident share not published on the school's public admissions pages",
+    "checkedOn": "2026-08-01"
+  }
+}

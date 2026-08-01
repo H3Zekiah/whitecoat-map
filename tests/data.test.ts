@@ -83,7 +83,7 @@ test("school schema rejects a bare number without provenance", () => {
     city: "Austin",
     website: "https://example.edu",
     classSize: 230,
-    gpaMedian: {
+    gpaAverage: {
       unavailable: true,
       reason: "not published",
       checkedOn: "2026-08-01",
@@ -93,7 +93,7 @@ test("school schema rejects a bare number without provenance", () => {
       reason: "not published",
       checkedOn: "2026-08-01",
     },
-    mcatMedian: {
+    mcatAverage: {
       unavailable: true,
       reason: "not published",
       checkedOn: "2026-08-01",

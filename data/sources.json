@@ -6,7 +6,9 @@
     "url": "https://www.tmdsas.com/stats-dashboard/medical-report.html",
     "provides": "Medical applicant funnel (incl. interviews), residency and applicant-type splits, MCAT/GPA averages, native GPA x MCAT crossed bins, EY2016-2026",
     "cadence": "rolling, annual cycle",
-    "retrieval": { "method": "powerbi-api" }
+    "retrieval": {
+      "method": "powerbi-api"
+    }
   },
   {
     "id": "tmdsas-matrix-ey20",
@@ -15,7 +17,9 @@
     "url": "https://www.tmdsas.com/docs/stats/MCAT-GPA-Matrix-EY20.pdf",
     "provides": "Crossed MCAT-band x GPA-band applicant and matriculant counts, EY2020",
     "cadence": "discontinued (final edition)",
-    "retrieval": { "method": "http" }
+    "retrieval": {
+      "method": "http"
+    }
   },
   {
     "id": "tmdsas-final-ey20",
@@ -24,7 +28,9 @@
     "url": "https://www.tmdsas.com/docs/stats/Final-Statistics-Report-Medical-EY20.pdf",
     "provides": "Applicant/matriculant demographics, GPA and MCAT distributions, EY2020",
     "cadence": "discontinued (final edition)",
-    "retrieval": { "method": "http" }
+    "retrieval": {
+      "method": "http"
+    }
   },
   {
     "id": "tmdsas-matrix-ey19",
@@ -33,7 +39,9 @@
     "url": "https://www.txhes.com/_resources/docs/stats/ey19/MCAT-GPA-Matrix-EY19.pdf",
     "provides": "Crossed MCAT-band x GPA-band applicant and matriculant counts, EY2019",
     "cadence": "archived",
-    "retrieval": { "method": "http" }
+    "retrieval": {
+      "method": "http"
+    }
   },
   {
     "id": "tmdsas-roster",
@@ -42,7 +50,9 @@
     "url": "https://www.tmdsas.com/about/TMDSAS_schools.html",
     "provides": "Member roster: 12 MD + 2 DO medical programs, plus dental/podiatry/veterinary",
     "cadence": "updated as schools join",
-    "retrieval": { "method": "http" }
+    "retrieval": {
+      "method": "http"
+    }
   },
   {
     "id": "tmdsas-residency",
@@ -51,7 +61,9 @@
     "url": "https://www.tmdsas.com/explore/residency.html",
     "provides": "Residency qualification pathways and the 10 percent non-resident cap",
     "cadence": "annual review",
-    "retrieval": { "method": "http" }
+    "retrieval": {
+      "method": "http"
+    }
   },
   {
     "id": "tmdsas-guide-residency",
@@ -60,7 +72,9 @@
     "url": "https://www.tmdsas.com/application-guide/residency.html",
     "provides": "How residency is determined within the application",
     "cadence": "annual review",
-    "retrieval": { "method": "http" }
+    "retrieval": {
+      "method": "http"
+    }
   },
   {
     "id": "texasjamp-home",
@@ -69,7 +83,9 @@
     "url": "https://www.texasjamp.org/",
     "provides": "JAMP eligibility, application window, benefits, participating institutions",
     "cadence": "annual cycle",
-    "retrieval": { "method": "http" }
+    "retrieval": {
+      "method": "http"
+    }
   },
   {
     "id": "utsw-class-profile",
@@ -78,6 +94,85 @@
     "url": "https://medschool.utsouthwestern.edu/admissions/class-profile.html",
     "provides": "Per-school GPA/MCAT averages and ranges, class composition",
     "cadence": "annual",
-    "retrieval": { "method": "http" }
+    "retrieval": {
+      "method": "http"
+    }
+  },
+  {
+    "id": "mcgovern-class-snapshot",
+    "name": "McGovern Medical School Class Snapshot",
+    "publisher": "McGovern Medical School, UTHealth Houston",
+    "url": "https://med.uth.edu/class-snapshot/",
+    "provides": "Entering class size, average GPA and MCAT",
+    "cadence": "annual",
+    "retrieval": {
+      "method": "http"
+    }
+  },
+  {
+    "id": "uh-fertitta-admissions-faq",
+    "name": "Fertitta Family College of Medicine Admissions FAQ",
+    "publisher": "University of Houston",
+    "url": "https://www.uh.edu/medicine/admissions/faqs/index.php",
+    "provides": "Matriculant average GPA and MCAT",
+    "cadence": "annual",
+    "retrieval": {
+      "method": "http"
+    }
+  },
+  {
+    "id": "utmb-admissions-faq",
+    "name": "UTMB John Sealy School of Medicine Admissions Policies and FAQs",
+    "publisher": "UTMB Health",
+    "url": "https://www.utmb.edu/som/admissions-information/ready-to-apply-info/admission-policies-faqs",
+    "provides": "Average GPA and MCAT, class size, out-of-state cap statement",
+    "cadence": "annual",
+    "retrieval": {
+      "method": "http"
+    }
+  },
+  {
+    "id": "dellmed-faq",
+    "name": "Dell Medical School Application FAQs",
+    "publisher": "The University of Texas at Austin",
+    "url": "https://dellmed.utexas.edu/education/how-to-apply/faqs",
+    "provides": "Class size; statement of no published GPA/MCAT statistics",
+    "cadence": "annual",
+    "retrieval": {
+      "method": "http"
+    }
+  },
+  {
+    "id": "uttyler-md-program",
+    "name": "UT Tyler Doctor of Medicine Program",
+    "publisher": "The University of Texas at Tyler",
+    "url": "https://www.uttyler.edu/academics/programs/doctor-of-medicine-md.php",
+    "provides": "Class size, minimum MCAT policy",
+    "cadence": "annual",
+    "retrieval": {
+      "method": "http"
+    }
+  },
+  {
+    "id": "uiwsom-admissions-faq",
+    "name": "UIWSOM DO Program Frequently Asked Questions",
+    "publisher": "University of the Incarnate Word",
+    "url": "https://osteopathic-medicine.uiw.edu/admissions/doctor-of-osteopathic-medicine/frequently-asked-questions.html",
+    "provides": "Entering class average GPA, science GPA, MCAT",
+    "cadence": "annual",
+    "retrieval": {
+      "method": "http"
+    }
+  },
+  {
+    "id": "utrgv-class-profiles",
+    "name": "UTRGV School of Medicine Entering Class Profiles",
+    "publisher": "The University of Texas Rio Grande Valley",
+    "url": "https://www.utrgv.edu/som/admissions/entering-class-profiles/index.htm",
+    "provides": "PDF entering-class profiles by class year",
+    "cadence": "annual",
+    "retrieval": {
+      "method": "http"
+    }
   }
 ]

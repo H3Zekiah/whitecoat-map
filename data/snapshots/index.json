@@ -151,5 +151,68 @@
     "bytes": 1131141,
     "file": "data/snapshots/tmdsas-dashboard-grid-residency/2026-08-01-018599ba.json",
     "contentType": "application/json"
+  },
+  {
+    "sourceId": "mcgovern-class-snapshot",
+    "url": "https://med.uth.edu/class-snapshot/",
+    "retrievedAt": "2026-08-01T16:59:39.106Z",
+    "sha256": "6708ee12baa63852dfd5987b9decfd4770fdfd0c99085919a26c8d9950a2e101",
+    "bytes": 127388,
+    "file": "data/snapshots/mcgovern-class-snapshot/2026-08-01-6708ee12.html",
+    "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "uh-fertitta-admissions-faq",
+    "url": "https://www.uh.edu/medicine/admissions/faqs/index.php",
+    "retrievedAt": "2026-08-01T16:59:39.565Z",
+    "sha256": "da602d36ab7089be75c1337facbb029d18873b5c26638ebb90b526ed4eb696e5",
+    "bytes": 43383,
+    "file": "data/snapshots/uh-fertitta-admissions-faq/2026-08-01-da602d36.html",
+    "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "utmb-admissions-faq",
+    "url": "https://www.utmb.edu/som/admissions-information/ready-to-apply-info/admission-policies-faqs",
+    "retrievedAt": "2026-08-01T16:59:41.350Z",
+    "sha256": "8c82973d23cc44a256ac76dc2ec24b07fa51c3cf7968bd113bcca8fa621c0e0d",
+    "bytes": 126781,
+    "file": "data/snapshots/utmb-admissions-faq/2026-08-01-8c82973d.html",
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "sourceId": "dellmed-faq",
+    "url": "https://dellmed.utexas.edu/education/how-to-apply/faqs",
+    "retrievedAt": "2026-08-01T16:59:41.847Z",
+    "sha256": "2aa91d99493f2df8b6f5f0ee69d12325bc0f0919d9588cfad554d05d427bfc2a",
+    "bytes": 93327,
+    "file": "data/snapshots/dellmed-faq/2026-08-01-2aa91d99.html",
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "sourceId": "uttyler-md-program",
+    "url": "https://www.uttyler.edu/academics/programs/doctor-of-medicine-md.php",
+    "retrievedAt": "2026-08-01T16:59:42.304Z",
+    "sha256": "944abc25c107ba97d19c86e91f7e73f5a9a4ce0484c51531e2de93d7def96428",
+    "bytes": 142695,
+    "file": "data/snapshots/uttyler-md-program/2026-08-01-944abc25.html",
+    "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "uiwsom-admissions-faq",
+    "url": "https://osteopathic-medicine.uiw.edu/admissions/doctor-of-osteopathic-medicine/frequently-asked-questions.html",
+    "retrievedAt": "2026-08-01T16:59:42.969Z",
+    "sha256": "b0d1e0fe53d6d08499592b9bc7805306008eece6fd7fed433cb245de27ec8b9c",
+    "bytes": 125072,
+    "file": "data/snapshots/uiwsom-admissions-faq/2026-08-01-b0d1e0fe.html",
+    "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "utrgv-class-profiles",
+    "url": "https://www.utrgv.edu/som/admissions/entering-class-profiles/index.htm",
+    "retrievedAt": "2026-08-01T16:59:43.305Z",
+    "sha256": "cb1b5f61dfc869bf44e1a4bf46d6e47c086e7ff5c15568370ef5505a35cef06c",
+    "bytes": 99668,
+    "file": "data/snapshots/utrgv-class-profiles/2026-08-01-cb1b5f61.html",
+    "contentType": "text/html"
   }
 ]
