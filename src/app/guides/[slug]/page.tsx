@@ -7,7 +7,7 @@ import { getPage, listPages } from "@/lib/content";
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return listPages("texas").map((p) => ({ slug: p.slug }));
+  return listPages("guides").map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({
@@ -16,7 +16,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const page = getPage("texas", slug);
+  const page = getPage("guides", slug);
   if (!page) return {};
   return {
     title: page.frontmatter.title,
@@ -24,18 +24,18 @@ export async function generateMetadata({
   };
 }
 
-export default async function TexasPage({
+export default async function GuidePage({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const page = getPage("texas", slug);
+  const page = getPage("guides", slug);
   if (!page) notFound();
 
   return (
     <PageShell>
-      <ContentPageBody page={page} eyebrow="The Texas Reference" />
+      <ContentPageBody page={page} eyebrow="Guides" />
     </PageShell>
   );
 }

@@ -185,5 +185,60 @@
     "retrieval": {
       "method": "http"
     }
+  },
+  {
+    "id": "tmdsas-deadlines",
+    "name": "TMDSAS Deadlines and Important Dates",
+    "publisher": "TMDSAS",
+    "url": "https://www.tmdsas.com/apply-now/deadlines.html",
+    "provides": "Official application cycle dates: open, submission, deadlines, ranking, match day",
+    "cadence": "annual",
+    "retrieval": {
+      "method": "http"
+    }
+  },
+  {
+    "id": "tmdsas-about-application",
+    "name": "TMDSAS About the Application",
+    "publisher": "TMDSAS",
+    "url": "https://www.tmdsas.com/explore/about-application.html",
+    "provides": "Application fee amount and fee-waiver policy; one application covers all member schools",
+    "cadence": "annual",
+    "retrieval": {
+      "method": "http"
+    }
+  },
+  {
+    "id": "texasjamp-criteria",
+    "name": "JAMP Program Criteria and Guidelines",
+    "publisher": "JAMP Council",
+    "url": "https://www.texasjamp.org/applying-to-jamp/criteria-guidelines.html",
+    "provides": "JAMP eligibility: economic criteria, GPA, MCAT minimum, credit hours, application timing",
+    "cadence": "annual",
+    "retrieval": {
+      "method": "http"
+    }
+  },
+  {
+    "id": "texasjamp-schools",
+    "name": "JAMP Participating Schools",
+    "publisher": "JAMP Council",
+    "url": "https://www.texasjamp.org/about/participating-schools.html",
+    "provides": "14 participating medical schools and 68 partner undergraduate institutions",
+    "cadence": "annual",
+    "retrieval": {
+      "method": "http"
+    }
+  },
+  {
+    "id": "aamc-fap-benefits",
+    "name": "AAMC Fee Assistance Program Benefits",
+    "publisher": "AAMC",
+    "url": "https://students-residents.aamc.org/fee-assistance-program/what-are-benefits-fee-assistance-program",
+    "provides": "Fee Assistance Program benefits and eligibility threshold",
+    "cadence": "annual",
+    "retrieval": {
+      "method": "http"
+    }
   }
 ]
