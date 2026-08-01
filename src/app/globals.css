@@ -26,6 +26,11 @@
   --warn-soft: #fdf0d3;
   --opinion-ink: #5b4a72;
   --opinion-soft: #efeaf6;
+
+  /* chart marks — validated (dataviz six checks) against paper, 2026-08-01 */
+  --chart-1: #048264;
+  --chart-2: #c1531f;
+  --chart-3: #7a4fb3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,6 +50,10 @@
     --warn-soft: #2e2410;
     --opinion-ink: #b5a3d4;
     --opinion-soft: #292134;
+
+    --chart-1: #35a08c;
+    --chart-2: #cf7a3c;
+    --chart-3: #9d7fd6;
   }
 }
 
@@ -64,6 +73,10 @@
   --warn-soft: #2e2410;
   --opinion-ink: #b5a3d4;
   --opinion-soft: #292134;
+
+  --chart-1: #35a08c;
+  --chart-2: #cf7a3c;
+  --chart-3: #9d7fd6;
 }
 
 @theme inline {
@@ -79,6 +92,9 @@
   --color-warn: var(--warn-ink);
   --color-warn-soft: var(--warn-soft);
   --color-opinion: var(--opinion-ink);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
   --color-opinion-soft: var(--opinion-soft);
 
   --font-display: var(--font-fraunces);
