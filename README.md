@@ -8,11 +8,11 @@ A free, Texas-specific resource for the student with no advisor, no premed frien
 
 Pre-launch, in development. No site is live yet.
 
-| Document | Purpose |
-|---|---|
-| [docs/SRD.md](docs/SRD.md) | System Requirements Document — what this is, who it serves, what v1 contains |
-| [docs/PLAN.md](docs/PLAN.md) | Implementation plan — phased build with review gates |
-| docs/SOURCES.md | Source feasibility audit (Phase 0, in progress) |
+| Document                     | Purpose                                                                      |
+| ---------------------------- | ---------------------------------------------------------------------------- |
+| [docs/SRD.md](docs/SRD.md)   | System Requirements Document — what this is, who it serves, what v1 contains |
+| [docs/PLAN.md](docs/PLAN.md) | Implementation plan — phased build with review gates                         |
+| docs/SOURCES.md              | Source feasibility audit (Phase 0, in progress)                              |
 
 ## Principles
 

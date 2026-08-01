@@ -32,16 +32,16 @@ Researched 2026-07-25.
 
 ### Already solved — cite, link, do not rebuild
 
-| Resource | What it does | Cost |
-|---|---|---|
-| AAMC MSAR | Canonical school-level admissions data, MD only | Paid (~$28/yr); free via AAMC Fee Assistance |
-| Premier Exam Prep free MSAR alternative | 209 MD + DO schools, per-field clickable citations, no account, local list-building | Free |
-| MedSchoolCoach Med School Explorer | 212 schools incl. 37 DO, tuition, secondary prompts, interview format | Free (funnel to paid) |
-| MyMedStack | School and residency explorer | Free tier |
-| GradPilot | TMDSAS GPA-by-MCAT crossed acceptance grids, EY2020-2025 pooled, open dataset on GitHub | Free content, paid essay review |
-| AAMC free reports | 22 free PDF reports from the MSAR site; FACTS tables | Free |
-| AACOM research reports | DO applicant/matriculant data by college, historical series | Free |
-| TMDSAS stats dashboard | Official Texas application data reports, 10-year trends | Free |
+| Resource                                | What it does                                                                            | Cost                                         |
+| --------------------------------------- | --------------------------------------------------------------------------------------- | -------------------------------------------- |
+| AAMC MSAR                               | Canonical school-level admissions data, MD only                                         | Paid (~$28/yr); free via AAMC Fee Assistance |
+| Premier Exam Prep free MSAR alternative | 209 MD + DO schools, per-field clickable citations, no account, local list-building     | Free                                         |
+| MedSchoolCoach Med School Explorer      | 212 schools incl. 37 DO, tuition, secondary prompts, interview format                   | Free (funnel to paid)                        |
+| MyMedStack                              | School and residency explorer                                                           | Free tier                                    |
+| GradPilot                               | TMDSAS GPA-by-MCAT crossed acceptance grids, EY2020-2025 pooled, open dataset on GitHub | Free content, paid essay review              |
+| AAMC free reports                       | 22 free PDF reports from the MSAR site; FACTS tables                                    | Free                                         |
+| AACOM research reports                  | DO applicant/matriculant data by college, historical series                             | Free                                         |
+| TMDSAS stats dashboard                  | Official Texas application data reports, 10-year trends                                 | Free                                         |
 
 A national school-stats **table** is a solved problem and we will not build one. We link these tools by name and teach students to use them.
 
@@ -51,7 +51,7 @@ Nobody has built a **visual, interpreted, fully sourced explanation of the Texas
 
 ### Closest guidance competitor
 
-**The UpLIFT Project** (uplift.guide) — a nonprofit, open-access, 18-chapter guide by ~26 Penn medical students for underrepresented, low-income, and first-generation applicants, published in *Academic Medicine* (2021). Genuinely good, shares our mission.
+**The UpLIFT Project** (uplift.guide) — a nonprofit, open-access, 18-chapter guide by ~26 Penn medical students for underrepresented, low-income, and first-generation applicants, published in _Academic Medicine_ (2021). Genuinely good, shares our mission.
 
 Room it leaves: national and generic (no TMDSAS, no Texas residency rules, no JAMP, no Texas schools); a downloadable document rather than a navigable, updatable site; published 2020-21 with no visible freshness signal; no visualization; no per-fact sourcing.
 
@@ -73,7 +73,7 @@ Four modules. No accounts, no personalization, no saved state.
 
 Four headline visualizations, all Texas, all sourced:
 
-1. **Acceptance landscape grid** — GPA crossed against MCAT, colored by historical acceptance rate, split by Texas resident and non-resident. The most-wanted view in Texas premed. *(Corrected 2026-08-01 by the Phase 0 audit:)* TMDSAS does publish crossed GPA × MCAT data — in archived per-year PDF matrices and inside its Power BI dashboard's data model — but never as a readable, linkable grid. That readable view is what we build; see `docs/SOURCES.md`.
+1. **Acceptance landscape grid** — GPA crossed against MCAT, colored by historical acceptance rate, split by Texas resident and non-resident. The most-wanted view in Texas premed. _(Corrected 2026-08-01 by the Phase 0 audit:)_ TMDSAS does publish crossed GPA × MCAT data — in archived per-year PDF matrices and inside its Power BI dashboard's data model — but never as a readable, linkable grid. That readable view is what we build; see `docs/SOURCES.md`.
 2. **The Texas funnel** — how a cohort moves through the pipeline: Texans who apply, interview, are accepted, and matriculate, with dropoff at each stage. Reframes "am I good enough" into "here is what the process actually is."
 3. **Per-school profiles** — consistent small charts on each school page: GPA and MCAT ranges rather than bare medians, class size, in-state share, cost.
 4. **Trends over time** — application volume and competitiveness by entry year across the last decade. Context for students, ammunition for advisors.
@@ -125,12 +125,14 @@ An honest comparison of MD, DO, PA, NP, and RN: training length, total cost, sco
 **Voice.** Neutral and encyclopedic. No first person in main text. Where personal judgment adds value it appears in a visually distinct, clearly labeled callout so opinion never masquerades as fact.
 
 **Plain language rules, enforced in review:**
+
 - Target roughly an 8th-grade reading level in main text.
 - Every acronym expanded on first use on every page. No page assumes the reader knows what AMCAS, BCPM, or a secondary is.
 - Short sentences, concrete numbers, no hedged prose.
 - No unexplained jargon. A glossary exists and terms link to it.
 
 **Sourcing standard, non-negotiable:**
+
 - No factual claim about requirements, deadlines, costs, or statistics publishes without a source URL and a verified-on date.
 - Primary sources only: the school's own site, TMDSAS, AAMC, AACOM, the Texas Higher Education Coordinating Board, or the program itself. Secondary sources may be read for leads, never cited as authority.
 - One documented exception: **GradPilot's open TMDSAS dataset** may be cited and linked with attribution, since it is openly published and independently auditable. Any figure taken from it is labeled as third-party derived, not primary.
@@ -217,6 +219,7 @@ Target feeling: a well-made guide written by someone who cares. Not a university
 **Primary:** a student with no prior knowledge can use the site for one sitting and afterward articulate a correct plan for their next 12 months. Tested by observing 3-5 real students, at least two early-stage and unadvised.
 
 **Supporting:**
+
 - Every TMDSAS-participating Texas medical program documented and verified.
 - All four headline visualizations shipped, accessible, and sourced.
 - Every guide stage written and reviewed.
@@ -229,15 +232,15 @@ Approach Texas pre-health advisors and relevant organizations (TAAHP, JAMP-parti
 
 ## 16. Risks
 
-| Risk | Mitigation |
-|---|---|
-| Data goes stale and misleads the student who trusts it | Per-field verified-on dates, visible staleness warnings, archived snapshots, annual refresh, build-time validation |
-| A student reads position data as a verdict and quits | No probabilities, no scores, no rates for their own band; framing and copy reviewed specifically for this |
-| Scope creep to other states or professions | Out of scope in v1; architecture allows expansion, content does not attempt it |
-| Solo maintenance collapses during OMS2 | Content and data in git so contributors can be added; automated staleness detection instead of manual auditing; nothing requiring continuous operation |
-| Wrong or harmful guidance | Sourcing standard, no AI output to users, no prediction, explicit not-advising disclaimer, advisor pre-review |
-| Mistaken for an official AAMC/TMDSAS resource | Prominent independence disclaimer; no use of their marks |
-| Nobody finds it | SEO-first structure from day one; advisor outreach once the quality bar is met |
+| Risk                                                   | Mitigation                                                                                                                                             |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Data goes stale and misleads the student who trusts it | Per-field verified-on dates, visible staleness warnings, archived snapshots, annual refresh, build-time validation                                     |
+| A student reads position data as a verdict and quits   | No probabilities, no scores, no rates for their own band; framing and copy reviewed specifically for this                                              |
+| Scope creep to other states or professions             | Out of scope in v1; architecture allows expansion, content does not attempt it                                                                         |
+| Solo maintenance collapses during OMS2                 | Content and data in git so contributors can be added; automated staleness detection instead of manual auditing; nothing requiring continuous operation |
+| Wrong or harmful guidance                              | Sourcing standard, no AI output to users, no prediction, explicit not-advising disclaimer, advisor pre-review                                          |
+| Mistaken for an official AAMC/TMDSAS resource          | Prominent independence disclaimer; no use of their marks                                                                                               |
+| Nobody finds it                                        | SEO-first structure from day one; advisor outreach once the quality bar is met                                                                         |
 
 ## 17. Open questions
 
@@ -251,29 +254,29 @@ All resolved 2026-08-01:
 
 ## Appendix: decisions locked
 
-| Decision | Choice |
-|---|---|
-| Name | Whitecoat Map — whitecoatmap.com |
-| Primary user | The no-map student |
-| Path scope | MD + DO deep, one orientation page for other professions |
-| Geography | Texas only, deep |
-| v1 center of gravity | Data and visualization, plus guides. No personalization. |
-| Accounts | None in v1; architecture stays account-ready |
+| Decision                | Choice                                                                         |
+| ----------------------- | ------------------------------------------------------------------------------ |
+| Name                    | Whitecoat Map — whitecoatmap.com                                               |
+| Primary user            | The no-map student                                                             |
+| Path scope              | MD + DO deep, one orientation page for other professions                       |
+| Geography               | Texas only, deep                                                               |
+| v1 center of gravity    | Data and visualization, plus guides. No personalization.                       |
+| Accounts                | None in v1; architecture stays account-ready                                   |
 | Headline visualizations | Acceptance landscape grid, Texas funnel, per-school profiles, trends over time |
-| Personal input | Stateless position marking only; never a rate, score, or verdict |
-| Data rigor | Reproducible pipeline with archived source snapshots and human verification |
-| Data scope | All TMDSAS-participating Texas medical programs plus Texas aggregates |
-| Third-party data | GradPilot open TMDSAS dataset may be cited with attribution |
-| AI in product | None in v1 |
-| Voice | Neutral encyclopedic, plain-language enforced |
-| Content storage | MDX in repo |
-| Guide organization | By stage of the journey |
-| Money | First-class section within the guides |
-| Stack | Next.js + TypeScript + Tailwind on Vercel, no database |
-| Charts | Bespoke SVG on d3 scales |
-| Design | Warm editorial |
-| Ownership | Personal project, source public |
-| Distribution | Search-first, then advisor outreach |
-| Pre-launch | Advisor and organization review before public launch |
-| Timeline | Quality first, no fixed deadline; build starts after exam Mon 2026-07-27 |
-| Success measure | A no-knowledge student leaves with a correct 12-month plan |
+| Personal input          | Stateless position marking only; never a rate, score, or verdict               |
+| Data rigor              | Reproducible pipeline with archived source snapshots and human verification    |
+| Data scope              | All TMDSAS-participating Texas medical programs plus Texas aggregates          |
+| Third-party data        | GradPilot open TMDSAS dataset may be cited with attribution                    |
+| AI in product           | None in v1                                                                     |
+| Voice                   | Neutral encyclopedic, plain-language enforced                                  |
+| Content storage         | MDX in repo                                                                    |
+| Guide organization      | By stage of the journey                                                        |
+| Money                   | First-class section within the guides                                          |
+| Stack                   | Next.js + TypeScript + Tailwind on Vercel, no database                         |
+| Charts                  | Bespoke SVG on d3 scales                                                       |
+| Design                  | Warm editorial                                                                 |
+| Ownership               | Personal project, source public                                                |
+| Distribution            | Search-first, then advisor outreach                                            |
+| Pre-launch              | Advisor and organization review before public launch                           |
+| Timeline                | Quality first, no fixed deadline; build starts after exam Mon 2026-07-27       |
+| Success measure         | A no-knowledge student leaves with a correct 12-month plan                     |
