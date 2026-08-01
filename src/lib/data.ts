@@ -255,21 +255,43 @@ function formatIssues(error: z.ZodError): string {
     .join("\n");
 }
 
+/*
+ * Filenames must be exactly <slug>.json. This repo lives in a synced
+ * folder that silently drops conflict copies ("utsw 2.json") beside real
+ * files; loading those would double-count schools. Anything not matching
+ * the strict pattern is refused loudly rather than skipped, so a
+ * mis-named real file is never quietly ignored either.
+ */
+const SCHOOL_FILENAME = /^[a-z0-9-]+\.json$/;
+
 export function loadSchools(): School[] {
   const dir = path.join(DATA_ROOT, "schools");
   if (!fs.existsSync(dir)) return [];
-  return fs
-    .readdirSync(dir)
-    .filter((f) => f.endsWith(".json"))
-    .map((f) => {
-      const filePath = path.join(dir, f);
-      const raw = JSON.parse(fs.readFileSync(filePath, "utf8"));
-      const parsed = schoolSchema.safeParse(raw);
-      if (!parsed.success) {
-        throw new Error(
-          `Invalid school file ${filePath}:\n${formatIssues(parsed.error)}`,
-        );
-      }
-      return parsed.data;
-    });
+
+  const entries = fs.readdirSync(dir).filter((f) => f.endsWith(".json"));
+  const stray = entries.filter((f) => !SCHOOL_FILENAME.test(f));
+  if (stray.length > 0) {
+    throw new Error(
+      `Unexpected file(s) in data/schools — expected <slug>.json:\n` +
+        stray.map((f) => `  - ${f}`).join("\n") +
+        `\nIf these are sync conflict copies, delete them.`,
+    );
+  }
+
+  return entries.map((f) => {
+    const filePath = path.join(dir, f);
+    const raw = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    const parsed = schoolSchema.safeParse(raw);
+    if (!parsed.success) {
+      throw new Error(
+        `Invalid school file ${filePath}:\n${formatIssues(parsed.error)}`,
+      );
+    }
+    if (parsed.data.slug !== f.replace(/\.json$/, "")) {
+      throw new Error(
+        `School file ${f} declares slug "${parsed.data.slug}"; filename and slug must match.`,
+      );
+    }
+    return parsed.data;
+  });
 }

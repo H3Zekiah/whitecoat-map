@@ -7,9 +7,9 @@
   "city": "Tyler",
   "website": "https://www.uttyler.edu/academics/colleges-schools/medicine/",
   "classSize": {
-    "value": 40,
-    "sourceId": "uttyler-md-program",
-    "retrieved": "2026-08-01"
+    "unavailable": true,
+    "reason": "inaugural-class figure appears in third-party sources only; not on the archived program page (checked 2026-08-01)",
+    "checkedOn": "2026-08-01"
   },
   "gpaAverage": {
     "unavailable": true,

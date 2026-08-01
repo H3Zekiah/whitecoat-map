@@ -174,5 +174,16 @@
     "retrieval": {
       "method": "http"
     }
+  },
+  {
+    "id": "mcgovern-class-2029",
+    "name": "McGovern Medical School \u2014 Meet the Newest Faces of the Class of 2029",
+    "publisher": "McGovern Medical School, UTHealth Houston",
+    "url": "https://med.uth.edu/blog/2025/08/13/meet-the-newest-faces-of-the-class-of-2029/",
+    "provides": "Entering Class of 2029 size, average GPA and MCAT",
+    "cadence": "annual",
+    "retrieval": {
+      "method": "http"
+    }
   }
 ]

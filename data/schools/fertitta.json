@@ -12,9 +12,9 @@
     "checkedOn": "2026-08-01"
   },
   "gpaAverage": {
-    "value": 3.6,
-    "sourceId": "uh-fertitta-admissions-faq",
-    "retrieved": "2026-08-01"
+    "unavailable": true,
+    "reason": "figures reported by third parties are not present in the archived snapshot of the cited page; not citable (checked 2026-08-01)",
+    "checkedOn": "2026-08-01"
   },
   "gpaRange": {
     "unavailable": true,
@@ -22,9 +22,9 @@
     "checkedOn": "2026-08-01"
   },
   "mcatAverage": {
-    "value": 503,
-    "sourceId": "uh-fertitta-admissions-faq",
-    "retrieved": "2026-08-01"
+    "unavailable": true,
+    "reason": "figures reported by third parties are not present in the archived snapshot of the cited page; not citable (checked 2026-08-01)",
+    "checkedOn": "2026-08-01"
   },
   "mcatRange": {
     "unavailable": true,

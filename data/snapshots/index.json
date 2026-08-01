@@ -214,5 +214,32 @@
     "bytes": 99668,
     "file": "data/snapshots/utrgv-class-profiles/2026-08-01-cb1b5f61.html",
     "contentType": "text/html"
+  },
+  {
+    "sourceId": "utmb-admissions-faq",
+    "url": "https://www.utmb.edu/som/admissions-information/ready-to-apply-info/admission-policies-faqs",
+    "retrievedAt": "2026-08-01T18:46:23.955Z",
+    "sha256": "e0aa53a31e068aff0d36be7bdedf40d56990797a1e8e92c054c1d37551304f05",
+    "bytes": 126781,
+    "file": "data/snapshots/utmb-admissions-faq/2026-08-01-e0aa53a3.html",
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "sourceId": "dellmed-faq",
+    "url": "https://dellmed.utexas.edu/education/how-to-apply/faqs",
+    "retrievedAt": "2026-08-01T18:46:24.482Z",
+    "sha256": "5c60762651d74d712bff8785d452adcca49907b6780715380f87c3e917ed0fee",
+    "bytes": 93327,
+    "file": "data/snapshots/dellmed-faq/2026-08-01-5c607626.html",
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "sourceId": "mcgovern-class-2029",
+    "url": "https://med.uth.edu/blog/2025/08/13/meet-the-newest-faces-of-the-class-of-2029/",
+    "retrievedAt": "2026-08-01T18:46:26.877Z",
+    "sha256": "1e0e556647ceacdde02c4e9e3d5e5264817188d53430f593d72117a6d3ad1257",
+    "bytes": 134819,
+    "file": "data/snapshots/mcgovern-class-2029/2026-08-01-1e0e5566.html",
+    "contentType": "text/html; charset=UTF-8"
   }
 ]

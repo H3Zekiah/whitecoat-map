@@ -9,7 +9,9 @@
   "classSize": {
     "value": 50,
     "sourceId": "dellmed-faq",
-    "retrieved": "2026-08-01"
+    "retrieved": "2026-08-01",
+    "verifiedBy": "Claude (checked against archived snapshot; owner Gate 3 review pending)",
+    "verifiedOn": "2026-08-01"
   },
   "gpaAverage": {
     "unavailable": true,
