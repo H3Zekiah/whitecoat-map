@@ -5,6 +5,11 @@ import { SourceChip } from "../SourceChip";
  * data table is the accessible equivalent and the no-JavaScript path.
  * Screen readers get the figure label and the real table; the SVG is
  * hidden from the accessibility tree.
+ *
+ * Because the visual is aria-hidden, nothing inside it may be focusable —
+ * a keyboard user must never land on a control that assistive technology
+ * cannot see. Charts rendered here therefore expose hover affordances
+ * only, and the table (reachable by keyboard) carries every value.
  */
 export function ChartFigure({
   title,

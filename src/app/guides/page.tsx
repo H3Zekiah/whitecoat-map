@@ -9,9 +9,9 @@ export const metadata: Metadata = {
     "Plain-language guides to getting into medical school in Texas, organised by where you are right now: high school, college, applying, gap year, or reapplying.",
 };
 
-function Entry({ page }: { page: ContentPage }) {
+function EntryBody({ page }: { page: ContentPage }) {
   return (
-    <li className="border-b border-rule pb-6">
+    <div className="border-b border-rule pb-6">
       <Link
         href={`/guides/${page.slug}`}
         className="font-display text-2xl font-semibold hover:text-accent"
@@ -19,7 +19,7 @@ function Entry({ page }: { page: ContentPage }) {
         {page.frontmatter.title}
       </Link>
       <p className="mt-2 text-muted">{page.frontmatter.description}</p>
-    </li>
+    </div>
   );
 }
 
@@ -63,15 +63,15 @@ export default function GuidesIndex() {
             </p>
             <ol className="space-y-6">
               {staged.map((p, i) => (
-                <div key={p.slug} className="grid grid-cols-[2rem_1fr] gap-2">
+                <li key={p.slug} className="grid grid-cols-[2rem_1fr] gap-2">
                   <span
                     aria-hidden="true"
                     className="font-display pt-1 text-lg text-faint tabular-nums"
                   >
                     {i + 1}
                   </span>
-                  <Entry page={p} />
-                </div>
+                  <EntryBody page={p} />
+                </li>
               ))}
             </ol>
           </section>
@@ -84,7 +84,9 @@ export default function GuidesIndex() {
             </h2>
             <ul className="space-y-6">
               {unstaged.map((p) => (
-                <Entry key={p.slug} page={p} />
+                <li key={p.slug}>
+                  <EntryBody page={p} />
+                </li>
               ))}
             </ul>
           </section>

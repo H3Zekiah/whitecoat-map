@@ -131,15 +131,9 @@ export function TrendChart({ points }: { points: TrendPoint[] }) {
                 width={innerW / points.length}
                 height={innerH}
                 fill="transparent"
-                tabIndex={0}
-                role="img"
-                aria-label={`Entry year ${p.entryYear}: ${p.applicants.toLocaleString("en-US")} applied, ${p.matriculated.toLocaleString("en-US")} started school`}
-                aria-describedby={hoverYear === p.entryYear ? id : undefined}
+                aria-hidden="true"
                 onMouseEnter={() => setHoverYear(p.entryYear)}
                 onMouseLeave={() => setHoverYear(null)}
-                onFocus={() => setHoverYear(p.entryYear)}
-                onBlur={() => setHoverYear(null)}
-                style={{ outline: "none" }}
               />
             </g>
           ))}

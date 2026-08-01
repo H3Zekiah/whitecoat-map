@@ -17,7 +17,8 @@
     "data:fetch": "node scripts/data-fetch.ts",
     "validate:data": "node scripts/validate-data.ts",
     "data:extract": "node scripts/extract-tmdsas.ts",
-    "data:coverage": "node scripts/coverage-report.ts"
+    "data:coverage": "node scripts/coverage-report.ts",
+    "audit:a11y": "node scripts/audit-a11y.ts"
   },
   "dependencies": {
     "@mdx-js/mdx": "^3.1.1",
@@ -34,15 +35,18 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.12",
+    "playwright": "^1.62.1",
     "prettier": "3.9.6",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wait-on": "^9.1.0"
   },
   "type": "module"
 }
