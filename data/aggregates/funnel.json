@@ -1,0 +1,92 @@
+{
+  "kind": "funnel",
+  "provenance": {
+    "sourceId": "tmdsas-dashboard",
+    "retrieved": "2026-08-01",
+    "snapshotHashes": [
+      "4354efef2030b8a78fbccc53493ab5fff7133728e8435450ad6e8f309bd131c1",
+      "ffa47c619ddb89b031233761cdc4249d5debaa63afab717abdad10adda798fa5",
+      "303db2e1441e40b1e9ffb1888fe1d7aa91bb18fd58df97404f1693e68c71a831"
+    ],
+    "extractedBy": "scripts/extract-tmdsas.ts"
+  },
+  "rows": [
+    {
+      "entryYear": 2016,
+      "applicants": 7323,
+      "interviewed": 3442,
+      "accepted": 2553,
+      "matriculated": 2156
+    },
+    {
+      "entryYear": 2017,
+      "applicants": 7324,
+      "interviewed": 3342,
+      "accepted": 2534,
+      "matriculated": 2120
+    },
+    {
+      "entryYear": 2018,
+      "applicants": 7373,
+      "interviewed": 3735,
+      "accepted": 2524,
+      "matriculated": 2103
+    },
+    {
+      "entryYear": 2019,
+      "applicants": 7715,
+      "interviewed": 3513,
+      "accepted": 2480,
+      "matriculated": 1731
+    },
+    {
+      "entryYear": 2020,
+      "applicants": 7783,
+      "interviewed": 4217,
+      "accepted": 2749,
+      "matriculated": 2284
+    },
+    {
+      "entryYear": 2021,
+      "applicants": 9482,
+      "interviewed": 4966,
+      "accepted": 2914,
+      "matriculated": 2340
+    },
+    {
+      "entryYear": 2022,
+      "applicants": 9173,
+      "interviewed": 4516,
+      "accepted": 3235,
+      "matriculated": 2774
+    },
+    {
+      "entryYear": 2023,
+      "applicants": 8875,
+      "interviewed": 4973,
+      "accepted": 3338,
+      "matriculated": 2863
+    },
+    {
+      "entryYear": 2024,
+      "applicants": 9005,
+      "interviewed": 5543,
+      "accepted": 3300,
+      "matriculated": 2871
+    },
+    {
+      "entryYear": 2025,
+      "applicants": 9518,
+      "interviewed": 5568,
+      "accepted": 3295,
+      "matriculated": 2900
+    },
+    {
+      "entryYear": 2026,
+      "applicants": 10240,
+      "interviewed": 4688,
+      "accepted": 1249,
+      "matriculated": 0
+    }
+  ]
+}

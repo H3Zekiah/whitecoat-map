@@ -9,7 +9,7 @@ import fs from "node:fs";
 import path from "node:path";
 import {
   DATA_ROOT,
-  funnelDatasetSchema,
+  datasetSchemasByKind,
   loadManifest,
   loadSchools,
 } from "../src/lib/data.ts";
@@ -40,12 +40,12 @@ if (fs.existsSync(aggregatesDir)) {
     const filePath = path.join(aggregatesDir, f);
     try {
       const raw = JSON.parse(fs.readFileSync(filePath, "utf8"));
-      /* Additional dataset kinds register here as Step 2.3 adds them. */
-      if (raw.kind === "funnel") {
-        funnelDatasetSchema.parse(raw);
-      } else {
+      const schema =
+        datasetSchemasByKind[raw.kind as keyof typeof datasetSchemasByKind];
+      if (!schema) {
         throw new Error(`unknown dataset kind: ${String(raw.kind)}`);
       }
+      schema.parse(raw);
       console.log(`OK  aggregates/${f}`);
     } catch (err) {
       failed = true;

@@ -1,0 +1,235 @@
+{
+  "kind": "residency-funnel",
+  "provenance": {
+    "sourceId": "tmdsas-dashboard",
+    "retrieved": "2026-08-01",
+    "snapshotHashes": [
+      "4354efef2030b8a78fbccc53493ab5fff7133728e8435450ad6e8f309bd131c1",
+      "ffa47c619ddb89b031233761cdc4249d5debaa63afab717abdad10adda798fa5",
+      "303db2e1441e40b1e9ffb1888fe1d7aa91bb18fd58df97404f1693e68c71a831",
+      "6e0b51708034b0f4f551b0acd32a5ead9c5e5ae6266bf9ee97b9dcf721090c9a",
+      "8a0321757e3c4bdde46d4582da7f4cec3606b539526e0787aee616ef4bd33a97",
+      "cfc833be6541b2e1310714c7e0298c208c5f3bb12d08ad6096e76ee273d4dba8",
+      "deaea768c11bb95cb14a8450314b71ef413f31aef4d2d5209468c59cd149005c"
+    ],
+    "extractedBy": "scripts/extract-tmdsas.ts"
+  },
+  "rows": [
+    {
+      "entryYear": 2016,
+      "residency": "Non Resident",
+      "applicants": 1655,
+      "interviewed": 480,
+      "accepted": 273,
+      "matriculated": 140
+    },
+    {
+      "entryYear": 2016,
+      "residency": "Texas Resident",
+      "applicants": 5668,
+      "interviewed": 2962,
+      "accepted": 2280,
+      "matriculated": 2016
+    },
+    {
+      "entryYear": 2017,
+      "residency": "Exception",
+      "applicants": 4,
+      "interviewed": 4,
+      "accepted": 4,
+      "matriculated": 0
+    },
+    {
+      "entryYear": 2017,
+      "residency": "Non Resident",
+      "applicants": 1684,
+      "interviewed": 473,
+      "accepted": 268,
+      "matriculated": 134
+    },
+    {
+      "entryYear": 2017,
+      "residency": "Texas Resident",
+      "applicants": 5636,
+      "interviewed": 2865,
+      "accepted": 2262,
+      "matriculated": 1986
+    },
+    {
+      "entryYear": 2018,
+      "residency": "Non Resident",
+      "applicants": 1737,
+      "interviewed": 624,
+      "accepted": 280,
+      "matriculated": 149
+    },
+    {
+      "entryYear": 2018,
+      "residency": "Texas Resident",
+      "applicants": 5636,
+      "interviewed": 3111,
+      "accepted": 2244,
+      "matriculated": 1954
+    },
+    {
+      "entryYear": 2019,
+      "residency": "Exception",
+      "applicants": 1,
+      "interviewed": 0,
+      "accepted": 0,
+      "matriculated": 0
+    },
+    {
+      "entryYear": 2019,
+      "residency": "Non Resident",
+      "applicants": 1699,
+      "interviewed": 461,
+      "accepted": 266,
+      "matriculated": 126
+    },
+    {
+      "entryYear": 2019,
+      "residency": "Texas Resident",
+      "applicants": 6015,
+      "interviewed": 3052,
+      "accepted": 2214,
+      "matriculated": 1605
+    },
+    {
+      "entryYear": 2020,
+      "residency": "Non Resident",
+      "applicants": 1700,
+      "interviewed": 549,
+      "accepted": 305,
+      "matriculated": 175
+    },
+    {
+      "entryYear": 2020,
+      "residency": "Texas Resident",
+      "applicants": 6083,
+      "interviewed": 3668,
+      "accepted": 2444,
+      "matriculated": 2109
+    },
+    {
+      "entryYear": 2021,
+      "residency": "Non Resident",
+      "applicants": 2089,
+      "interviewed": 670,
+      "accepted": 283,
+      "matriculated": 157
+    },
+    {
+      "entryYear": 2021,
+      "residency": "Texas Resident",
+      "applicants": 7393,
+      "interviewed": 4296,
+      "accepted": 2631,
+      "matriculated": 2183
+    },
+    {
+      "entryYear": 2022,
+      "residency": "Exception",
+      "applicants": 1,
+      "interviewed": 1,
+      "accepted": 1,
+      "matriculated": 1
+    },
+    {
+      "entryYear": 2022,
+      "residency": "Non Resident",
+      "applicants": 2303,
+      "interviewed": 617,
+      "accepted": 346,
+      "matriculated": 199
+    },
+    {
+      "entryYear": 2022,
+      "residency": "Texas Resident",
+      "applicants": 6869,
+      "interviewed": 3898,
+      "accepted": 2888,
+      "matriculated": 2574
+    },
+    {
+      "entryYear": 2023,
+      "residency": "Non Resident",
+      "applicants": 2184,
+      "interviewed": 762,
+      "accepted": 360,
+      "matriculated": 188
+    },
+    {
+      "entryYear": 2023,
+      "residency": "Texas Resident",
+      "applicants": 6691,
+      "interviewed": 4211,
+      "accepted": 2978,
+      "matriculated": 2675
+    },
+    {
+      "entryYear": 2024,
+      "residency": "Exception",
+      "applicants": 1,
+      "interviewed": 1,
+      "accepted": 1,
+      "matriculated": 1
+    },
+    {
+      "entryYear": 2024,
+      "residency": "Non Resident",
+      "applicants": 2116,
+      "interviewed": 957,
+      "accepted": 372,
+      "matriculated": 200
+    },
+    {
+      "entryYear": 2024,
+      "residency": "Texas Resident",
+      "applicants": 6888,
+      "interviewed": 4585,
+      "accepted": 2927,
+      "matriculated": 2670
+    },
+    {
+      "entryYear": 2025,
+      "residency": "Non Resident",
+      "applicants": 2120,
+      "interviewed": 973,
+      "accepted": 357,
+      "matriculated": 207
+    },
+    {
+      "entryYear": 2025,
+      "residency": "Texas Resident",
+      "applicants": 7398,
+      "interviewed": 4595,
+      "accepted": 2938,
+      "matriculated": 2693
+    },
+    {
+      "entryYear": 2026,
+      "residency": "Exception",
+      "applicants": 1,
+      "interviewed": 0,
+      "accepted": 0,
+      "matriculated": 0
+    },
+    {
+      "entryYear": 2026,
+      "residency": "Non Resident",
+      "applicants": 2132,
+      "interviewed": 783,
+      "accepted": 146,
+      "matriculated": 0
+    },
+    {
+      "entryYear": 2026,
+      "residency": "Texas Resident",
+      "applicants": 8107,
+      "interviewed": 3905,
+      "accepted": 1103,
+      "matriculated": 0
+    }
+  ]
+}

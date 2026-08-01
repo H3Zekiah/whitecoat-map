@@ -148,31 +148,94 @@ export type School = z.infer<typeof schoolSchema>;
 
 /* ---------- aggregate datasets (filled in Step 2.3) ---------- */
 
+const sha256Hash = z.string().regex(/^[0-9a-f]{64}$/);
+
 const datasetProvenance = z.object({
   sourceId: z.string().min(1),
   retrieved: isoDate,
-  /* sha256 of the archived snapshot the figures were extracted from */
-  snapshotHash: z.string().regex(/^[0-9a-f]{64}$/),
+  /* sha256 hashes of the archived raw responses the figures came from */
+  snapshotHashes: z.array(sha256Hash).min(1),
   extractedBy: z.string().min(1),
   verifiedBy: z.string().min(1).optional(),
   verifiedOn: isoDate.optional(),
 });
+
+const entryYear = z.number().int().min(2000).max(2100);
+const count = z.number().int().nonnegative();
 
 export const funnelDatasetSchema = z.object({
   kind: z.literal("funnel"),
   provenance: datasetProvenance,
   rows: z.array(
     z.object({
-      entryYear: z.number().int().min(2000).max(2100),
-      applicants: z.number().int().nonnegative(),
-      interviewed: z.number().int().nonnegative(),
-      accepted: z.number().int().nonnegative(),
-      matriculated: z.number().int().nonnegative(),
+      entryYear,
+      applicants: count,
+      interviewed: count,
+      accepted: count,
+      matriculated: count,
     }),
   ),
 });
 
 export type FunnelDataset = z.infer<typeof funnelDatasetSchema>;
+
+export const residencyFunnelDatasetSchema = z.object({
+  kind: z.literal("residency-funnel"),
+  provenance: datasetProvenance,
+  rows: z.array(
+    z.object({
+      entryYear,
+      residency: z.string().min(1),
+      applicants: count,
+      interviewed: count,
+      accepted: count,
+      matriculated: count,
+    }),
+  ),
+});
+
+/*
+ * Grid rows keep the model's native bins (GPA lower edge at width 0.1,
+ * MCAT lower edge at width 5) with no re-binning: display-layer band
+ * rollups and small-cell suppression are chart transforms (Step 3.2)
+ * with their own golden tests, so the stored data stays as close to the
+ * source as possible.
+ */
+export const gridDatasetSchema = z.object({
+  kind: z.literal("gpa-mcat-grid"),
+  provenance: datasetProvenance,
+  rows: z.array(
+    z.object({
+      entryYear,
+      gpaBinLow: z.number().min(0).max(4),
+      mcatBinLow: z.number().int().min(400).max(530),
+      applicants: count,
+      accepted: count,
+    }),
+  ),
+});
+
+export const gridResidencyDatasetSchema = z.object({
+  kind: z.literal("gpa-mcat-grid-residency"),
+  provenance: datasetProvenance,
+  rows: z.array(
+    z.object({
+      entryYear,
+      residency: z.string().min(1),
+      gpaBinLow: z.number().min(0).max(4),
+      mcatBinLow: z.number().int().min(400).max(530),
+      applicants: count,
+      accepted: count,
+    }),
+  ),
+});
+
+export const datasetSchemasByKind = {
+  funnel: funnelDatasetSchema,
+  "residency-funnel": residencyFunnelDatasetSchema,
+  "gpa-mcat-grid": gridDatasetSchema,
+  "gpa-mcat-grid-residency": gridResidencyDatasetSchema,
+} as const;
 
 /* A dataset renders only when its provenance carries human verification. */
 export function isDatasetVerified(d: {

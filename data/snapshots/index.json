@@ -70,5 +70,86 @@
     "bytes": 43235,
     "file": "data/snapshots/utsw-class-profile/2026-08-01-7e0bc1ab.html",
     "contentType": "text/html;charset=utf-8"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-funnel-interviewed",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#funnel-interviewed",
+    "retrievedAt": "2026-08-01T16:30:20.918Z",
+    "sha256": "4354efef2030b8a78fbccc53493ab5fff7133728e8435450ad6e8f309bd131c1",
+    "bytes": 11433,
+    "file": "data/snapshots/tmdsas-dashboard-funnel-interviewed/2026-08-01-4354efef.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-funnel-accepted",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#funnel-accepted",
+    "retrievedAt": "2026-08-01T16:30:20.972Z",
+    "sha256": "ffa47c619ddb89b031233761cdc4249d5debaa63afab717abdad10adda798fa5",
+    "bytes": 11412,
+    "file": "data/snapshots/tmdsas-dashboard-funnel-accepted/2026-08-01-ffa47c61.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-funnel-matriculated",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#funnel-matriculated",
+    "retrievedAt": "2026-08-01T16:30:21.026Z",
+    "sha256": "303db2e1441e40b1e9ffb1888fe1d7aa91bb18fd58df97404f1693e68c71a831",
+    "bytes": 11232,
+    "file": "data/snapshots/tmdsas-dashboard-funnel-matriculated/2026-08-01-303db2e1.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-residency-applicants",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#residency-applicants",
+    "retrievedAt": "2026-08-01T16:30:21.081Z",
+    "sha256": "6e0b51708034b0f4f551b0acd32a5ead9c5e5ae6266bf9ee97b9dcf721090c9a",
+    "bytes": 12506,
+    "file": "data/snapshots/tmdsas-dashboard-residency-applicants/2026-08-01-6e0b5170.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-residency-interviewed",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#residency-interviewed",
+    "retrievedAt": "2026-08-01T16:30:21.133Z",
+    "sha256": "8a0321757e3c4bdde46d4582da7f4cec3606b539526e0787aee616ef4bd33a97",
+    "bytes": 19384,
+    "file": "data/snapshots/tmdsas-dashboard-residency-interviewed/2026-08-01-8a032175.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-residency-accepted",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#residency-accepted",
+    "retrievedAt": "2026-08-01T16:30:21.193Z",
+    "sha256": "cfc833be6541b2e1310714c7e0298c208c5f3bb12d08ad6096e76ee273d4dba8",
+    "bytes": 19363,
+    "file": "data/snapshots/tmdsas-dashboard-residency-accepted/2026-08-01-cfc833be.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-residency-matriculated",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#residency-matriculated",
+    "retrievedAt": "2026-08-01T16:30:21.248Z",
+    "sha256": "deaea768c11bb95cb14a8450314b71ef413f31aef4d2d5209468c59cd149005c",
+    "bytes": 18940,
+    "file": "data/snapshots/tmdsas-dashboard-residency-matriculated/2026-08-01-deaea768.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-grid-overall",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#grid-overall",
+    "retrievedAt": "2026-08-01T16:30:21.317Z",
+    "sha256": "363ee15a49958520665abe71a34c08106de9e3f37494e1e3042ffe84604af8d8",
+    "bytes": 712366,
+    "file": "data/snapshots/tmdsas-dashboard-grid-overall/2026-08-01-363ee15a.json",
+    "contentType": "application/json"
+  },
+  {
+    "sourceId": "tmdsas-dashboard-grid-residency",
+    "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true#grid-residency",
+    "retrievedAt": "2026-08-01T16:30:21.505Z",
+    "sha256": "018599ba0afb2ca6e2c207b44edd800c59b016ef2ea573e68be307d87937fa70",
+    "bytes": 1131141,
+    "file": "data/snapshots/tmdsas-dashboard-grid-residency/2026-08-01-018599ba.json",
+    "contentType": "application/json"
   }
 ]

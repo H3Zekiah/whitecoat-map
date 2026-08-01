@@ -47,7 +47,7 @@ test("dataset without verification is not renderable", () => {
     provenance: {
       sourceId: "tmdsas-dashboard",
       retrieved: "2026-08-01",
-      snapshotHash: "a".repeat(64),
+      snapshotHashes: ["a".repeat(64)],
       extractedBy: "scripts/extract-tmdsas.ts",
     },
   };
@@ -118,7 +118,7 @@ test("funnel dataset schema accepts a well-formed dataset", () => {
     provenance: {
       sourceId: "tmdsas-dashboard",
       retrieved: "2026-08-01",
-      snapshotHash: "b".repeat(64),
+      snapshotHashes: ["b".repeat(64)],
       extractedBy: "scripts/extract-tmdsas.ts",
       verifiedBy: "Hezekiah Lasater",
       verifiedOn: "2026-08-01",
