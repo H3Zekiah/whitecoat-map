@@ -1,0 +1,191 @@
+{
+  "kind": "applicant-type",
+  "provenance": {
+    "sourceId": "tmdsas-dashboard",
+    "retrieved": "2026-08-01",
+    "snapshotHashes": [
+      "402c6eec4bb69057e2a283c09c92f68171292c7c66127eb8d1eb81a21a94ee00",
+      "fda8a65d0a1afa8d8af1d8af9ac061f60d2deb9d22317aac38cfefbc2ab8119d",
+      "72b2a46985c1a7b64b82e1f6a344560d947537f02616b08fa1466a48e9ad3681",
+      "46030a1f51e68dd31cbe2b3b373d08e652a8d8e180fd5bafa7f1993d3ab50161",
+      "47e44ea078beb2663fdaeb16b907db8f70d750f77a1b49789480a0f5e398f868",
+      "d866bbd93a9d86b5049a42996048f32842cb0b83a813ffc2b4f15d8900f2bbbb",
+      "a05631c4302fbd94577239fec703a69943c222c0dbdb1434252cea9cce2ba70e",
+      "517bd418f13c45eb344b3367be31b7cab81d265096f6e7f2206cef940b3e4768",
+      "3ed7b47d1e29c40d6d474eb6d259152814d708193a24ac9fa9d163fcdd3113e0",
+      "f54e822dd2d03f1d7c2dc64d13ff9e160caaee5b07b509ffbd98d98bd621e410",
+      "278cce6b014d219f56c1071c1c888b3aad97a303f96a0a17089bb80ee55c254b",
+      "1669ede48ced425954587603cb8a8e4b687a512166573f18b79cea1da0cda5ad",
+      "99495c90e944032c86bfe761fe41733f35a900d9140cd9e433ec41c35b23660e",
+      "51d2499a7ffc91f9985d04e4eac72478284529f4d65dc78547ed7f82abffc25e",
+      "ea2131b1c0173aaf7a29b12a5c53f6c9f23b8912441d47acce94d41390ab5889",
+      "5d2a1885f8e1c88904a2c0937d19e8fc823f7a82152c3f7322467aedcef35c9e",
+      "d8db1769c3d4c6b830456345624c478b3d4d573f27568a06a54e83b2db7e2a57"
+    ],
+    "extractedBy": "scripts/extract-tmdsas.ts"
+  },
+  "rows": [
+    {
+      "entryYear": 2016,
+      "dimension": "Reapply",
+      "inGroup": true,
+      "applicants": 1734,
+      "interviewed": 754,
+      "accepted": 462,
+      "matriculated": 438
+    },
+    {
+      "entryYear": 2017,
+      "dimension": "Reapply",
+      "inGroup": true,
+      "applicants": 1784,
+      "interviewed": 717,
+      "accepted": 460,
+      "matriculated": 427
+    },
+    {
+      "entryYear": 2018,
+      "dimension": "Reapply",
+      "inGroup": true,
+      "applicants": 1689,
+      "interviewed": 773,
+      "accepted": 411,
+      "matriculated": 388
+    },
+    {
+      "entryYear": 2019,
+      "dimension": "Reapply",
+      "inGroup": true,
+      "applicants": 1732,
+      "interviewed": 686,
+      "accepted": 376,
+      "matriculated": 273
+    },
+    {
+      "entryYear": 2020,
+      "dimension": "Reapply",
+      "inGroup": true,
+      "applicants": 1880,
+      "interviewed": 998,
+      "accepted": 522,
+      "matriculated": 472
+    },
+    {
+      "entryYear": 2021,
+      "dimension": "Reapply",
+      "inGroup": true,
+      "applicants": 2141,
+      "interviewed": 1178,
+      "accepted": 613,
+      "matriculated": 523
+    },
+    {
+      "entryYear": 2022,
+      "dimension": "Reapply",
+      "inGroup": true,
+      "applicants": 2283,
+      "interviewed": 1188,
+      "accepted": 741,
+      "matriculated": 653
+    },
+    {
+      "entryYear": 2023,
+      "dimension": "Reapply",
+      "inGroup": true,
+      "applicants": 2062,
+      "interviewed": 1210,
+      "accepted": 737,
+      "matriculated": 654
+    },
+    {
+      "entryYear": 2024,
+      "dimension": "Reapply",
+      "inGroup": true,
+      "applicants": 2086,
+      "interviewed": 1316,
+      "accepted": 698,
+      "matriculated": 636
+    },
+    {
+      "entryYear": 2025,
+      "dimension": "Reapply",
+      "inGroup": true,
+      "applicants": 2088,
+      "interviewed": 1168,
+      "accepted": 618,
+      "matriculated": 578
+    },
+    {
+      "entryYear": 2026,
+      "dimension": "Reapply",
+      "inGroup": true,
+      "applicants": 2391,
+      "interviewed": 930,
+      "accepted": 141,
+      "matriculated": 0
+    },
+    {
+      "entryYear": 2020,
+      "dimension": "NonTrad",
+      "inGroup": true,
+      "applicants": 1967,
+      "interviewed": 928,
+      "accepted": 535,
+      "matriculated": 455
+    },
+    {
+      "entryYear": 2021,
+      "dimension": "NonTrad",
+      "inGroup": true,
+      "applicants": 2502,
+      "interviewed": 1064,
+      "accepted": 616,
+      "matriculated": 505
+    },
+    {
+      "entryYear": 2022,
+      "dimension": "NonTrad",
+      "inGroup": true,
+      "applicants": 2302,
+      "interviewed": 982,
+      "accepted": 665,
+      "matriculated": 547
+    },
+    {
+      "entryYear": 2023,
+      "dimension": "NonTrad",
+      "inGroup": true,
+      "applicants": 2106,
+      "interviewed": 1015,
+      "accepted": 619,
+      "matriculated": 536
+    },
+    {
+      "entryYear": 2024,
+      "dimension": "NonTrad",
+      "inGroup": true,
+      "applicants": 2234,
+      "interviewed": 1263,
+      "accepted": 654,
+      "matriculated": 576
+    },
+    {
+      "entryYear": 2025,
+      "dimension": "NonTrad",
+      "inGroup": true,
+      "applicants": 2309,
+      "interviewed": 1203,
+      "accepted": 610,
+      "matriculated": 549
+    },
+    {
+      "entryYear": 2026,
+      "dimension": "NonTrad",
+      "inGroup": true,
+      "applicants": 2593,
+      "interviewed": 993,
+      "accepted": 200,
+      "matriculated": 0
+    }
+  ]
+}

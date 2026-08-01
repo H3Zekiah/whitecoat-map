@@ -304,3 +304,78 @@ for (const r of funnelRows) {
 console.log(
   "\nDatasets written UNVERIFIED: verifiedBy/verifiedOn are empty until a human checks figures against the dashboard (Gate 3). Unverified datasets do not render.",
 );
+
+/* 4. Applicant-type outcomes (reapplicant, non-traditional) */
+const typeRows: object[] = [];
+for (const flag of [COLS.reapply, COLS.nonTrad]) {
+  const base = await groupedCount(resourceKey, `type-${flag}-applicants`, [
+    COLS.entryYear,
+    flag,
+  ]);
+  const iv = await groupedCount(resourceKey, `type-${flag}-interviewed`, [
+    COLS.entryYear,
+    flag,
+    COLS.isInterviewed,
+  ]);
+  const ac = await groupedCount(resourceKey, `type-${flag}-accepted`, [
+    COLS.entryYear,
+    flag,
+    COLS.isAccepted,
+  ]);
+  const mt = await groupedCount(resourceKey, `type-${flag}-matriculated`, [
+    COLS.entryYear,
+    flag,
+    COLS.isMatriculated,
+  ]);
+
+  /* Each flag has its own dictionary vocabulary, so membership is
+     decided by an explicit true-label list rather than by guessing which
+     string means "no". */
+  const flagTrueLabels = TRUE_LABELS[flag];
+  const isTrue = (label: Cell) =>
+    typeof label === "string" && flagTrueLabels.includes(label);
+
+  const sub = (rows: Cell[][], trueLabels: string[]) => {
+    const out = new Map<string, number>();
+    for (const [year, flagLabel, outcomeLabel, count] of rows) {
+      if (!isTrue(flagLabel)) continue;
+      if (
+        typeof outcomeLabel === "string" &&
+        trueLabels.includes(outcomeLabel)
+      ) {
+        const k = String(Number(year));
+        out.set(k, (out.get(k) ?? 0) + Number(count));
+      }
+    }
+    return out;
+  };
+
+  const applicants = new Map<string, number>();
+  for (const [year, flagLabel, count] of base) {
+    if (!isTrue(flagLabel)) continue;
+    const k = String(Number(year));
+    applicants.set(k, (applicants.get(k) ?? 0) + Number(count));
+  }
+
+  const ivMap = sub(iv, TRUE_LABELS[COLS.isInterviewed]);
+  const acMap = sub(ac, TRUE_LABELS[COLS.isAccepted]);
+  const mtMap = sub(mt, TRUE_LABELS[COLS.isMatriculated]);
+
+  for (const [year, n] of applicants) {
+    typeRows.push({
+      entryYear: Number(year),
+      dimension: flag,
+      inGroup: true,
+      applicants: n,
+      interviewed: ivMap.get(year) ?? 0,
+      accepted: acMap.get(year) ?? 0,
+      matriculated: mtMap.get(year) ?? 0,
+    });
+  }
+}
+
+writeDataset("applicant-type.json", {
+  kind: "applicant-type",
+  provenance: provenance(),
+  rows: typeRows,
+});

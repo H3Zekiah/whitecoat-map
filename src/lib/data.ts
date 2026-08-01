@@ -230,7 +230,26 @@ export const gridResidencyDatasetSchema = z.object({
   ),
 });
 
+export const applicantTypeDatasetSchema = z.object({
+  kind: z.literal("applicant-type"),
+  provenance: datasetProvenance,
+  rows: z.array(
+    z.object({
+      entryYear,
+      /* the flag this row describes, e.g. "Reapply" */
+      dimension: z.string().min(1),
+      /* whether this row is the in-group ("true") side of that flag */
+      inGroup: z.boolean(),
+      applicants: count,
+      interviewed: count,
+      accepted: count,
+      matriculated: count,
+    }),
+  ),
+});
+
 export const datasetSchemasByKind = {
+  "applicant-type": applicantTypeDatasetSchema,
   funnel: funnelDatasetSchema,
   "residency-funnel": residencyFunnelDatasetSchema,
   "gpa-mcat-grid": gridDatasetSchema,

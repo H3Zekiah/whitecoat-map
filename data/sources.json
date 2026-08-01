@@ -240,5 +240,27 @@
     "retrieval": {
       "method": "http"
     }
+  },
+  {
+    "id": "ama-residency",
+    "name": "What is residency?",
+    "publisher": "American Medical Association",
+    "url": "https://www.ama-assn.org/medical-students/preparing-residency/what-residency",
+    "provides": "Residency structure and length by specialty",
+    "cadence": "as updated",
+    "retrieval": {
+      "method": "http"
+    }
+  },
+  {
+    "id": "ama-np-physician",
+    "name": "What's the difference between physicians and nurse practitioners?",
+    "publisher": "American Medical Association",
+    "url": "https://www.ama-assn.org/practice-management/scope-practice/whats-difference-between-physicians-and-nurse-practitioners",
+    "provides": "Comparative training hours and requirements for physicians vs nurse practitioners",
+    "cadence": "as updated",
+    "retrieval": {
+      "method": "http"
+    }
   }
 ]

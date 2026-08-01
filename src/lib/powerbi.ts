@@ -36,6 +36,8 @@ export const COLS = {
   residency: "Residency",
   gpaBins: "Overall GPA (bins)",
   mcatBins: "MCAT B (MATRIX bins)",
+  reapply: "Reapply",
+  nonTrad: "NonTrad",
 } as const;
 
 /* Dictionary labels that mean an outcome flag is true. Everything else
@@ -44,6 +46,11 @@ export const TRUE_LABELS: Record<string, string[]> = {
   [COLS.isInterviewed]: ["Interviewed"],
   [COLS.isAccepted]: ["Accepted", "Yes"],
   [COLS.isMatriculated]: ["Matriculated"],
+  /* Applicant-type flags use their own vocabularies — Reapply's false
+     value is "N", NonTrad's is "Traditional". Listing the true labels
+     explicitly avoids guessing at the false one. */
+  [COLS.reapply]: ["Reapplicant"],
+  [COLS.nonTrad]: ["Non-Traditional"],
 };
 
 interface ColumnRef {
