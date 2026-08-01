@@ -1,0 +1,83 @@
+[
+  {
+    "id": "tmdsas-dashboard",
+    "name": "TMDSAS Application Statistics Dashboard",
+    "publisher": "TMDSAS",
+    "url": "https://www.tmdsas.com/stats-dashboard/medical-report.html",
+    "provides": "Medical applicant funnel (incl. interviews), residency and applicant-type splits, MCAT/GPA averages, native GPA x MCAT crossed bins, EY2016-2026",
+    "cadence": "rolling, annual cycle",
+    "retrieval": { "method": "powerbi-api" }
+  },
+  {
+    "id": "tmdsas-matrix-ey20",
+    "name": "TMDSAS MCAT-GPA Matrix, Entry Year 2020",
+    "publisher": "TMDSAS",
+    "url": "https://www.tmdsas.com/docs/stats/MCAT-GPA-Matrix-EY20.pdf",
+    "provides": "Crossed MCAT-band x GPA-band applicant and matriculant counts, EY2020",
+    "cadence": "discontinued (final edition)",
+    "retrieval": { "method": "http" }
+  },
+  {
+    "id": "tmdsas-final-ey20",
+    "name": "TMDSAS Final Statistics Report, Entry Year 2020",
+    "publisher": "TMDSAS",
+    "url": "https://www.tmdsas.com/docs/stats/Final-Statistics-Report-Medical-EY20.pdf",
+    "provides": "Applicant/matriculant demographics, GPA and MCAT distributions, EY2020",
+    "cadence": "discontinued (final edition)",
+    "retrieval": { "method": "http" }
+  },
+  {
+    "id": "tmdsas-matrix-ey19",
+    "name": "TMDSAS MCAT-GPA Matrix, Entry Year 2019 (txhes.com archive)",
+    "publisher": "TMDSAS via Texas Health Education Service",
+    "url": "https://www.txhes.com/_resources/docs/stats/ey19/MCAT-GPA-Matrix-EY19.pdf",
+    "provides": "Crossed MCAT-band x GPA-band applicant and matriculant counts, EY2019",
+    "cadence": "archived",
+    "retrieval": { "method": "http" }
+  },
+  {
+    "id": "tmdsas-roster",
+    "name": "TMDSAS Participating Schools",
+    "publisher": "TMDSAS",
+    "url": "https://www.tmdsas.com/about/TMDSAS_schools.html",
+    "provides": "Member roster: 12 MD + 2 DO medical programs, plus dental/podiatry/veterinary",
+    "cadence": "updated as schools join",
+    "retrieval": { "method": "http" }
+  },
+  {
+    "id": "tmdsas-residency",
+    "name": "TMDSAS Residency Determination",
+    "publisher": "TMDSAS",
+    "url": "https://www.tmdsas.com/explore/residency.html",
+    "provides": "Residency qualification pathways and the 10 percent non-resident cap",
+    "cadence": "annual review",
+    "retrieval": { "method": "http" }
+  },
+  {
+    "id": "tmdsas-guide-residency",
+    "name": "TMDSAS Application Guide - Residency",
+    "publisher": "TMDSAS",
+    "url": "https://www.tmdsas.com/application-guide/residency.html",
+    "provides": "How residency is determined within the application",
+    "cadence": "annual review",
+    "retrieval": { "method": "http" }
+  },
+  {
+    "id": "texasjamp-home",
+    "name": "Texas JAMP",
+    "publisher": "JAMP Council",
+    "url": "https://www.texasjamp.org/",
+    "provides": "JAMP eligibility, application window, benefits, participating institutions",
+    "cadence": "annual cycle",
+    "retrieval": { "method": "http" }
+  },
+  {
+    "id": "utsw-class-profile",
+    "name": "UT Southwestern Class Profile",
+    "publisher": "UT Southwestern Medical Center",
+    "url": "https://medschool.utsouthwestern.edu/admissions/class-profile.html",
+    "provides": "Per-school GPA/MCAT averages and ranges, class composition",
+    "cadence": "annual",
+    "retrieval": { "method": "http" }
+  }
+]
