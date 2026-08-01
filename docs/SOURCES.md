@@ -91,9 +91,11 @@ Two risks named in `PLAN.md` are **retired**:
 
 ---
 
-## Gate 1 questions
+## Gate 1 — PASSED 2026-08-01
 
-1. **Grid basis:** build our own extraction from the official dashboard (primary), with the S4 open dataset as an independent cross-check, attributed wherever its derivations are used. Confirm?
-2. **UIWSOM:** include it as a 15th school-directory entry with a clear "applies through AACOMAS, not TMDSAS" note? Recommended — a no-map student should not miss a Texas DO school because of application-service trivia.
-3. **Acceptance-based grid** (not matriculation-based), precisely labeled. Confirm?
-4. **EY2020 discrepancy** handled as a blocking Phase 2 task rather than a Gate 1 blocker. Confirm?
+All four visualizations confirmed GO. Decisions:
+
+1. **Grid basis:** our own extraction from the official dashboard (primary); the S4 open dataset serves as an independent cross-check, attributed wherever its derivations are used.
+2. **UIWSOM:** included as a 15th school-directory entry with a clear "applies through AACOMAS, not TMDSAS" note, outside the TMDSAS aggregate data.
+3. **Grid rates are acceptance-based** (`IsAccepted`), precisely labeled so they cannot be read as matriculation rates.
+4. **EY2020 discrepancy** is a blocking task inside Phase 2 (Step 2.3): no aggregate figure publishes until the inclusion-rule difference is explained. Phases 1 proceeds meanwhile.

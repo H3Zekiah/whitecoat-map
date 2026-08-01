@@ -38,6 +38,8 @@ Known source pool to work through: TMDSAS stats dashboard and data reports, TMDS
 
 You review `SOURCES.md` and confirm which visualizations survive contact with the actual sources, and whether any needs redesign. Nothing else proceeds until this is settled, because Phase 3 is built directly on it.
 
+**PASSED 2026-08-01.** All four visualizations GO; both headline risks retired; decisions recorded in `SOURCES.md`. One open item: the EY2020 PDF-vs-dashboard discrepancy blocks Step 2.3 publication, not Phase 1.
+
 ---
 
 ## Phase 1 — Foundations
