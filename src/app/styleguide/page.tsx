@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Callout } from "@/components/Callout";
+import { BarChart } from "@/components/charts/BarChart";
+import { ChartFigure } from "@/components/charts/ChartFigure";
 import { DataTable } from "@/components/DataTable";
 import { PageShell } from "@/components/PageShell";
 import { Prose } from "@/components/Prose";
@@ -170,6 +172,48 @@ export default function Styleguide() {
             </tr>
           </tbody>
         </DataTable>
+      </Section>
+
+      <Section title="Reference chart">
+        <p className="mb-2 text-sm text-muted">
+          The Step 3.1 chart foundation: bespoke SVG on d3 scales, validated
+          chart tokens, tooltip on hover and keyboard focus, and a real table
+          behind every chart. Sample data for layout only.
+        </p>
+        <ChartFigure
+          title="TMDSAS medical applicants by entry year"
+          description="Sample data for layout demonstration"
+          tableCaption="TMDSAS medical applicants by entry year (sample data)"
+          tableHead={["Entry year", "Applicants"]}
+          tableRows={[
+            ["2021", "9,482"],
+            ["2022", "9,173"],
+            ["2023", "8,875"],
+            ["2024", "9,005"],
+            ["2025", "9,518"],
+          ]}
+        >
+          <BarChart
+            data={[
+              { label: "2021", value: 9482 },
+              { label: "2022", value: 9173 },
+              { label: "2023", value: 8875 },
+              { label: "2024", value: 9005 },
+              { label: "2025", value: 9518 },
+            ]}
+          />
+        </ChartFigure>
+        <div className="flex gap-4">
+          <span className="inline-flex items-center gap-2 text-sm">
+            <span className="bg-chart-1 h-3 w-3 rounded-sm" /> chart-1
+          </span>
+          <span className="inline-flex items-center gap-2 text-sm">
+            <span className="bg-chart-2 h-3 w-3 rounded-sm" /> chart-2
+          </span>
+          <span className="inline-flex items-center gap-2 text-sm">
+            <span className="bg-chart-3 h-3 w-3 rounded-sm" /> chart-3
+          </span>
+        </div>
       </Section>
 
       <Section title="Source chip">
