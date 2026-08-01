@@ -4,7 +4,8 @@ import { ThemeToggle } from "./ThemeToggle";
 const NAV = [
   { href: "/data", label: "The numbers" },
   { href: "/schools", label: "Schools" },
-  { href: "/texas/residency", label: "Texas residency" },
+  { href: "/texas", label: "Texas rules" },
+  { href: "/guides", label: "Guides" },
   { href: "/glossary", label: "Glossary" },
 ];
 

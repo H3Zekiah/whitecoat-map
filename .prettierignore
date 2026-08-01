@@ -1,3 +1,8 @@
 # Archived source snapshots are verbatim documents; reformatting them
 # would invalidate their content hashes. Never touch.
 data/snapshots/
+
+# MDX content: prose line-breaks and inline <Source/> placement are
+# authored deliberately; reflowing them turns inline citations into
+# separate paragraphs.
+content/**/*.mdx

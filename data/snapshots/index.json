@@ -241,5 +241,86 @@
     "bytes": 134819,
     "file": "data/snapshots/mcgovern-class-2029/2026-08-01-1e0e5566.html",
     "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "mcgovern-class-snapshot",
+    "url": "https://med.uth.edu/class-snapshot/",
+    "retrievedAt": "2026-08-01T21:58:11.565Z",
+    "sha256": "c65f257ad7b13811a9c935f89b0028b7d476f16fb57ff71b6a4bb1edf2f3e562",
+    "bytes": 127361,
+    "file": "data/snapshots/mcgovern-class-snapshot/2026-08-01-c65f257a.html",
+    "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "utmb-admissions-faq",
+    "url": "https://www.utmb.edu/som/admissions-information/ready-to-apply-info/admission-policies-faqs",
+    "retrievedAt": "2026-08-01T21:58:13.153Z",
+    "sha256": "5a5660dc7ca477614fec2f9befed9ead30927205ee204fb8c9943edcccd462a6",
+    "bytes": 126781,
+    "file": "data/snapshots/utmb-admissions-faq/2026-08-01-5a5660dc.html",
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "sourceId": "dellmed-faq",
+    "url": "https://dellmed.utexas.edu/education/how-to-apply/faqs",
+    "retrievedAt": "2026-08-01T21:58:13.690Z",
+    "sha256": "234130fc2df39227883edc3fff221f583f3a49a357e78d9cc0ca667a64d088ff",
+    "bytes": 93327,
+    "file": "data/snapshots/dellmed-faq/2026-08-01-234130fc.html",
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "sourceId": "mcgovern-class-2029",
+    "url": "https://med.uth.edu/blog/2025/08/13/meet-the-newest-faces-of-the-class-of-2029/",
+    "retrievedAt": "2026-08-01T21:58:15.607Z",
+    "sha256": "83d7e6d9e1dd337420c992654d5361e0679e59b242163ffff5032e8094b941ee",
+    "bytes": 134846,
+    "file": "data/snapshots/mcgovern-class-2029/2026-08-01-83d7e6d9.html",
+    "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "tmdsas-deadlines",
+    "url": "https://www.tmdsas.com/apply-now/deadlines.html",
+    "retrievedAt": "2026-08-01T21:58:16.142Z",
+    "sha256": "8c4b37fe68cade03d70ad90b7ad7c6e6f0e5056c7f2cf3ea101f4af669c97ad8",
+    "bytes": 111514,
+    "file": "data/snapshots/tmdsas-deadlines/2026-08-01-8c4b37fe.html",
+    "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "tmdsas-about-application",
+    "url": "https://www.tmdsas.com/explore/about-application.html",
+    "retrievedAt": "2026-08-01T21:58:16.230Z",
+    "sha256": "3d9a295e43b5419e436747ba2b8ec324362fb083b26a5e777f865bfb8e05c4e3",
+    "bytes": 46517,
+    "file": "data/snapshots/tmdsas-about-application/2026-08-01-3d9a295e.html",
+    "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "texasjamp-criteria",
+    "url": "https://www.texasjamp.org/applying-to-jamp/criteria-guidelines.html",
+    "retrievedAt": "2026-08-01T21:58:16.731Z",
+    "sha256": "102bba0c0043911d0a9661a4c5015abccdfd42e51cc9f086e4c0973987f4d3d1",
+    "bytes": 56849,
+    "file": "data/snapshots/texasjamp-criteria/2026-08-01-102bba0c.html",
+    "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "texasjamp-schools",
+    "url": "https://www.texasjamp.org/about/participating-schools.html",
+    "retrievedAt": "2026-08-01T21:58:16.893Z",
+    "sha256": "8d2e3ce3da63ab3a1c011bd22e562ea6bc2d47180b7af5c589350dc95077f572",
+    "bytes": 78651,
+    "file": "data/snapshots/texasjamp-schools/2026-08-01-8d2e3ce3.html",
+    "contentType": "text/html; charset=UTF-8"
+  },
+  {
+    "sourceId": "aamc-fap-benefits",
+    "url": "https://students-residents.aamc.org/fee-assistance-program/what-are-benefits-fee-assistance-program",
+    "retrievedAt": "2026-08-01T21:58:17.302Z",
+    "sha256": "7405bc50e706fc2014178deb149c84addf97bf10db0067a44eec3133df69c8d5",
+    "bytes": 129538,
+    "file": "data/snapshots/aamc-fap-benefits/2026-08-01-7405bc50.html",
+    "contentType": "text/html; charset=UTF-8"
   }
 ]
